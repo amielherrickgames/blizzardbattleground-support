@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28914881/README.md)
+[README.md](https://github.com/user-attachments/files/28914901/README.md)
 # Blizzard Battleground — Support & Privacy
 
 This repository hosts the public support page and privacy policy for the iOS game **Blizzard Battleground**.
@@ -7,8 +7,8 @@ This repository hosts the public support page and privacy policy for the iOS gam
 
 Once GitHub Pages is enabled (Settings → Pages → Branch: `main`, folder `/root`):
 
-- **Support page:** `https://YOURUSERNAME.github.io/blizzard-support/`
-- **Privacy Policy:** `https://YOURUSERNAME.github.io/blizzard-support/privacy.html`
+- **Support page:** https://amielherrickgames.github.io/blizzardbattleground-support/
+- **Privacy Policy:** https://amielherrickgames.github.io/blizzardbattleground-support/privacy.html
 
 Use these two URLs in App Store Connect:
 - Support URL → the version page (with description and keywords)
@@ -19,12 +19,9 @@ Use these two URLs in App Store Connect:
 - `index.html` — support landing page (contact, FAQ, privacy link)
 - `privacy.html` — privacy policy (discloses AdMob data collection and in-app purchases)
 
-## Before publishing — fill in placeholders
+## Contact
 
-Search both `index.html` and `privacy.html` for text in `[BRACKETS]` and replace:
-
-- `[INSERT YOUR SUPPORT EMAIL]` — the contact email (appears in both files)
-- `[INSERT DATE]` — the privacy policy effective date (in `privacy.html`)
+amielherrick.games@gmail.com
 
 ## Updating
 
