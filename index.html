@@ -1,63 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blizzard Battleground — Support</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         line-height: 1.6; color: #1a1a2e; max-width: 720px; margin: 0 auto; padding: 28px 20px 60px;
-         background: #eaf4fb; }
-  .card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(29,78,137,0.12); }
-  h1 { color: #1d4e89; font-size: 2rem; margin-bottom: 2px; }
-  .tag { color: #2e6fb0; font-weight: 600; margin-bottom: 20px; }
-  h2 { color: #2e6fb0; font-size: 1.15rem; margin-top: 26px; }
-  a { color: #2e6fb0; }
-  .email { font-size: 1.1rem; font-weight: 700; color: #1d4e89; }
-  details { margin: 10px 0; padding: 10px 14px; background: #f4f9fd; border-radius: 10px; }
-  summary { cursor: pointer; font-weight: 600; color: #1d4e89; }
-  details p { margin: 8px 0 2px; }
-  footer { margin-top: 32px; color: #888; font-size: 0.85rem; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Official support page for Blizzard Battleground, an iOS tank battle game by Amiel Herrick. Get help with purchases, ads, privacy, gameplay, and app support." />
+  <meta name="theme-color" content="#2b7de9" />
+  <title>Support | Blizzard Battleground</title>
+  <style>
+    :root {
+      --bg: #f6fbff;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #5f6f89;
+      --accent: #2b7de9;
+      --accent-dark: #155db6;
+      --border: #d9e7f7;
+      --ice: #eef8ff;
+      --snow: #ffffff;
+      --warning-bg: #fff8e6;
+      --warning-border: #f1d28a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      background:
+        radial-gradient(circle at top left, rgba(158, 218, 255, 0.55), transparent 34rem),
+        linear-gradient(180deg, #eaf7ff 0%, var(--bg) 45%, #ffffff 100%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+
+    a {
+      color: var(--accent-dark);
+      font-weight: 600;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+      word-break: break-word;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .brand-mini {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: var(--accent-dark);
+      letter-spacing: -0.01em;
+    }
+
+    .logo-dot {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #d8f2ff, #ffffff);
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 16px rgba(30, 88, 140, 0.12);
+      font-size: 1.15rem;
+    }
+
+    .hero {
+      background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 48%, #f7fcff 100%);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(30px, 5vw, 52px);
+      box-shadow: 0 12px 32px rgba(30, 88, 140, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -90px;
+      top: -100px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(43, 125, 233, 0.12), rgba(43, 125, 233, 0));
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      color: var(--accent-dark);
+      font-weight: 800;
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.25rem, 7vw, 4.25rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+      color: var(--text);
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      padding: 11px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--snow);
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 6px 18px rgba(30, 88, 140, 0.08);
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(30, 88, 140, 0.06);
+    }
+
+    @media (min-width: 820px) {
+      .span-4 { grid-column: span 4; }
+      .span-6 { grid-column: span 6; }
+      .span-8 { grid-column: span 8; }
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 1.1rem;
+      color: var(--accent-dark);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .contact-box {
+      padding: 18px;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 2px;
+      font-size: 1.05rem;
+      font-weight: 900;
+    }
+
+    .notice {
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-top: 14px;
+    }
+
+    .warning {
+      background: var(--warning-bg);
+      border-color: var(--warning-border);
+      border-left-color: #c58b00;
+    }
+
+    details {
+      margin: 10px 0;
+      padding: 14px 16px;
+      background: #f7fbff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 850;
+      color: var(--accent-dark);
+    }
+
+    details p {
+      margin: 10px 0 0;
+      color: var(--text);
+    }
+
+    .link-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .link-tile {
+      display: block;
+      padding: 14px 16px;
+      background: #f7fbff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      text-decoration: none;
+    }
+
+    .link-tile strong {
+      display: block;
+      color: var(--accent-dark);
+    }
+
+    .link-tile span {
+      display: block;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 22px 4px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .small {
+      font-size: 0.92rem;
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Blizzard Battleground",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "iOS",
+    "author": {
+      "@type": "Person",
+      "name": "Amiel Herrick"
+    },
+    "email": "amielherrick.games@gmail.com",
+    "url": "https://amielherrick.github.io/"
+  }
+  </script>
 </head>
 <body>
-  <div class="card">
-    <h1>Blizzard Battleground</h1>
-    <div class="tag">Support &amp; Help</div>
+  <div class="page">
+    <div class="topbar" aria-label="Site header">
+      <div class="brand-mini"><span class="logo-dot" aria-hidden="true">❄️</span> Blizzard Battleground</div>
+      <div>Support &amp; Legal</div>
+    </div>
 
-    <p>Thanks for playing! Slide in, take aim, and rule the ice. If you run into a problem or have a question, we&rsquo;re happy to help.</p>
+    <header class="hero">
+      <div class="eyebrow">iOS Game Support</div>
+      <h1>Blizzard Battleground</h1>
+      <p class="subtitle">Slide across the ice, line up the perfect shot, and battle your way through a frozen tank arena. This page is the official support and legal information hub for Blizzard Battleground.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:amielherrick.games@gmail.com?subject=Blizzard%20Battleground%20Support">Contact Support</a>
+        <a class="button" href="privacy.html">Privacy Policy</a>
+        <a class="button" href="#purchases">Purchases &amp; Refunds</a>
+      </div>
+    </header>
 
-    <h2>Contact</h2>
-    <p>Email us anytime &mdash; we read every message:</p>
-    <p class="email">amielherrick.games@gmail.com</p>
+    <main class="grid">
+      <section class="card span-8" id="support">
+        <h2>Need help?</h2>
+        <p>If something is not working as expected, send a support request with as much detail as possible so we can look into it.</p>
+        <div class="contact-box">
+          <p><strong>Email support:</strong></p>
+          <a class="email" href="mailto:amielherrick.games@gmail.com?subject=Blizzard%20Battleground%20Support">amielherrick.games@gmail.com</a>
+          <p class="muted small">Helpful details include your device model, iOS version, app version, what happened, and any screenshots that show the issue.</p>
+        </div>
+        <div class="notice">
+          <strong>No account required.</strong> Blizzard Battleground does not require you to create an account, provide a name, or provide an email address to play.
+        </div>
+      </section>
 
-    <h2>Frequently Asked</h2>
+      <aside class="card span-4" aria-label="Quick links">
+        <h2>Quick links</h2>
+        <div class="link-list">
+          <a class="link-tile" href="privacy.html"><strong>Privacy Policy</strong><span>How data, ads, and third-party services are handled.</span></a>
+          <a class="link-tile" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer"><strong>Apple Standard EULA</strong><span>License terms that apply unless a separate EULA is provided.</span></a>
+          <a class="link-tile" href="https://reportaproblem.apple.com/" rel="noopener noreferrer"><strong>Apple Report a Problem</strong><span>Request help from Apple for App Store purchases.</span></a>
+          <a class="link-tile" href="#faq"><strong>FAQ</strong><span>Gameplay, ads, hearts, coins, and progress questions.</span></a>
+        </div>
+      </aside>
 
-    <details>
-      <summary>I bought coins but didn&rsquo;t receive them.</summary>
-      <p>Coins are delivered as soon as Apple confirms your purchase. If they don&rsquo;t appear, fully close and reopen the app. If they&rsquo;re still missing, email us with the date of purchase and we&rsquo;ll sort it out.</p>
-    </details>
+      <section class="card span-6" id="purchases">
+        <h2>Purchases, coins, and refunds</h2>
+        <p>Blizzard Battleground may offer optional in-app purchases, such as coin packs or other in-game items. Purchases are processed by Apple through the App Store. We do not collect or store your payment card number, Apple Account password, or other Apple billing credentials.</p>
+        <ul>
+          <li><strong>Coin packs and similar items:</strong> These are generally consumable digital items, which means they are intended to be used in the app after purchase.</li>
+          <li><strong>Missing purchase:</strong> Fully close and reopen the app first. If the purchase is still missing, contact support with the approximate purchase date and item purchased.</li>
+          <li><strong>Refund requests:</strong> Refunds for App Store purchases are handled by Apple. You can request a refund through <a href="https://reportaproblem.apple.com/" rel="noopener noreferrer">Apple&rsquo;s Report a Problem page</a>.</li>
+        </ul>
+      </section>
 
-    <details>
-      <summary>How do hearts work?</summary>
-      <p>Hearts are your lives. You spend one when you lose a level. They refill over time, and you can also earn them by watching an ad or spending coins.</p>
-    </details>
+      <section class="card span-6" id="ads">
+        <h2>Ads and rewarded ads</h2>
+        <p>The app may show ads through Google AdMob. Some ads may be personalized depending on your device settings, consent choices, region, and Apple&rsquo;s App Tracking Transparency permission status.</p>
+        <ul>
+          <li><strong>Rewarded ads are optional:</strong> When offered, you choose whether to watch a rewarded ad in exchange for an in-game benefit, such as a retry, heart, or similar reward.</li>
+          <li><strong>Ad choices:</strong> You can manage app tracking permissions in iOS Settings and adjust Apple advertising settings under Privacy &amp; Security.</li>
+          <li><strong>Consent notices:</strong> In some regions, the app or AdMob may present consent options before serving personalized ads.</li>
+        </ul>
+      </section>
 
-    <details>
-      <summary>How do I remove ads?</summary>
-      <p>An ad-free option is planned for a future update. In the meantime, the rewarded ads (for hearts and free retries) are always optional &mdash; you only watch them if you choose to.</p>
-    </details>
+      <section class="card span-6" id="privacy">
+        <h2>Privacy and data requests</h2>
+        <p>The app is designed to avoid collecting personal information directly from players. However, third-party services such as Apple and Google AdMob may process information needed for purchases, ads, fraud prevention, diagnostics, analytics, or app functionality.</p>
+        <p>Read the full <a href="privacy.html">Privacy Policy</a> for details about data collection, third-party services, advertising identifiers, children&rsquo;s privacy, privacy rights, and how to contact us.</p>
+      </section>
 
-    <details>
-      <summary>I changed phones &mdash; will my progress carry over?</summary>
-      <p>Progress is saved on your device. Cross-device sync is something we&rsquo;re considering for a future update.</p>
-    </details>
+      <section class="card span-6" id="children">
+        <h2>Children and parents</h2>
+        <p>Blizzard Battleground is not intended to be directed to children under 13. Parents and guardians should review the app&rsquo;s age rating, device settings, purchase controls, and privacy settings before allowing a child to play.</p>
+        <ul>
+          <li>Use Apple&rsquo;s Screen Time and purchase approval settings to help manage downloads, in-app purchases, and app access.</li>
+          <li>If you believe a child has provided personal information through a support request, contact us so we can address it.</li>
+          <li>Do not include sensitive personal information in support emails unless it is necessary to resolve the issue.</li>
+        </ul>
+      </section>
 
-    <h2>Privacy</h2>
-    <p>Read our <a href="privacy.html">Privacy Policy</a>.</p>
+      <section class="card span-12" id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <details>
+          <summary>I bought coins but didn&rsquo;t receive them.</summary>
+          <p>Coins are usually delivered after Apple confirms the purchase. Fully close and reopen the app. If the coins still do not appear, email support with the approximate purchase date, item purchased, and any non-sensitive receipt details. Do not send your Apple Account password or full payment information.</p>
+        </details>
+
+        <details>
+          <summary>How do hearts work?</summary>
+          <p>Hearts represent lives or retry opportunities. Depending on the version of the app, hearts may refill over time, be earned through gameplay, be obtained through an optional rewarded ad, or be purchased with in-game currency.</p>
+        </details>
+
+        <details>
+          <summary>Are rewarded ads required?</summary>
+          <p>No. Rewarded ads are intended to be optional. If you choose to watch one, the app will tell you what reward is being offered before you decide.</p>
+        </details>
+
+        <details>
+          <summary>How do I remove or limit ads?</summary>
+          <p>If an ad-free option is available in your version of the app, it will appear inside the app. You can also limit tracking through iOS Settings. Some non-personalized or contextual ads may still appear depending on the app version and region.</p>
+        </details>
+
+        <details>
+          <summary>I changed phones. Will my progress carry over?</summary>
+          <p>Unless the app version specifically supports cloud sync or account-based progress, gameplay progress may be stored locally on your device. Contact support if you believe progress was lost after an update or device change.</p>
+        </details>
+
+        <details>
+          <summary>How do I report a bug?</summary>
+          <p>Email support with your device model, iOS version, app version, what you were doing when the issue happened, and the steps that seem to trigger it. Screenshots are helpful when available.</p>
+        </details>
+      </section>
+
+      <section class="card span-12" id="legal">
+        <h2>Legal information</h2>
+        <h3>Terms of use / license</h3>
+        <p>Unless Blizzard Battleground provides a separate custom end user license agreement, use of the app is governed by Apple&rsquo;s Standard Licensed Application End User License Agreement and applicable App Store terms.</p>
+
+        <h3>Availability and changes</h3>
+        <p>Game features, rewards, ads, prices, coin packs, levels, and other content may change over time. We may update, modify, suspend, or discontinue features when needed for gameplay balancing, technical improvements, policy compliance, security, or business reasons.</p>
+
+        <h3>Fair play</h3>
+        <p>Do not tamper with the app, exploit bugs, interfere with ads or purchases, reverse engineer the app, or use unauthorized tools to alter gameplay, coins, rewards, hearts, or progression.</p>
+
+        <h3>No emergency or critical use</h3>
+        <p>Blizzard Battleground is an entertainment game. It is not designed for emergency use, safety-critical use, financial decisions, health decisions, legal decisions, or any purpose where app errors, interruptions, or data loss could cause harm.</p>
+
+        <div class="notice warning">
+          <strong>Legal note:</strong> This page provides general support and legal information for the app. It is not a substitute for advice from a qualified attorney about your specific obligations, app configuration, jurisdictions, audience, or third-party SDK settings.
+        </div>
+      </section>
+    </main>
 
     <footer>
-      &copy; 2026 Amiel Herrick. Blizzard Battleground.
+      <p>&copy; 2026 Amiel Herrick. Blizzard Battleground. All rights reserved.</p>
+      <p class="small">Last updated: June 13, 2026 · Contact: <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></p>
     </footer>
   </div>
 </body>
