@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
   <meta name="description" content="Privacy Policy for Blizzard Battleground, an iOS game developed by Amiel Herrick." />
+  <meta name="theme-color" content="#2b7de9" />
+  <meta property="og:title" content="Privacy Policy | Blizzard Battleground" />
+  <meta property="og:description" content="Privacy Policy for Blizzard Battleground, an iOS game developed by Amiel Herrick." />
+  <meta property="og:type" content="website" />
   <title>Privacy Policy | Blizzard Battleground</title>
   <style>
+
     :root {
       --bg: #f6fbff;
       --card: #ffffff;
@@ -16,450 +21,208 @@
       --accent-dark: #155db6;
       --border: #d9e7f7;
       --ice: #eef8ff;
+      --snow: #ffffff;
+      --warning-bg: #fff8e6;
+      --warning-border: #f1d28a;
+      --danger-bg: #fff0f0;
+      --danger-border: #f0b8b8;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.65;
-      background: linear-gradient(180deg, #eaf7ff 0%, var(--bg) 45%, #ffffff 100%);
       color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(158, 218, 255, 0.55), transparent 34rem),
+        linear-gradient(180deg, #eaf7ff 0%, var(--bg) 45%, #ffffff 100%);
     }
+    .page { max-width: 1080px; margin: 0 auto; padding: 28px 18px 64px; }
+    a { color: var(--accent-dark); font-weight: 650; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; word-break: break-word; }
+    a:hover { color: var(--accent); }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 18px; color: var(--muted); font-size: 0.95rem; flex-wrap: wrap; }
+    .brand-mini { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--accent-dark); letter-spacing: -0.01em; text-decoration: none; }
+    .logo-dot { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 12px; background: linear-gradient(135deg, #d8f2ff, #ffffff); border: 1px solid var(--border); box-shadow: 0 6px 16px rgba(30, 88, 140, 0.12); font-size: 1.15rem; }
+    nav { display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a { text-decoration: none; }
+    .hero, header.hero { background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 48%, #f7fcff 100%); border: 1px solid var(--border); border-radius: 24px; padding: clamp(30px, 5vw, 52px); box-shadow: 0 12px 32px rgba(30, 88, 140, 0.1); position: relative; overflow: hidden; margin-bottom: 22px; }
+    .hero::after { content: ""; position: absolute; width: 280px; height: 280px; right: -90px; top: -100px; border-radius: 50%; background: radial-gradient(circle, rgba(43, 125, 233, 0.12), rgba(43, 125, 233, 0)); pointer-events: none; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--ice); color: var(--accent-dark); border: 1px solid var(--border); font-size: 0.9rem; font-weight: 750; margin: 0 0 14px; }
+    h1 { margin: 0 0 10px; font-size: clamp(2.15rem, 6vw, 4.15rem); line-height: 1.02; letter-spacing: -0.055em; }
+    .subtitle { margin: 0; color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.22rem); max-width: 760px; }
+    .meta { margin-top: 18px; color: var(--muted); font-size: 0.98rem; }
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
+    .card { grid-column: span 12; background: rgba(255,255,255,0.92); border: 1px solid var(--border); border-radius: 20px; padding: 24px; box-shadow: 0 10px 28px rgba(30,88,140,0.07); }
+    .card.half { grid-column: span 6; }
+    .card.third { grid-column: span 4; }
+    h2 { margin: 0 0 12px; color: var(--accent-dark); font-size: 1.35rem; line-height: 1.2; letter-spacing: -0.015em; }
+    h3 { margin: 22px 0 8px; font-size: 1.05rem; color: #22314d; }
+    p { margin: 0 0 12px; }
+    ul { margin: 10px 0 0 1.25rem; padding: 0; }
+    li { margin: 7px 0; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: var(--accent-dark); color: white; text-decoration: none; box-shadow: 0 8px 20px rgba(21,93,182,0.18); }
+    .button.secondary { background: #ffffff; color: var(--accent-dark); border: 1px solid var(--border); box-shadow: none; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: var(--ice); border: 1px solid var(--border); color: var(--accent-dark); font-size: 0.88rem; font-weight: 700; }
+    .notice { border-radius: 16px; padding: 16px 18px; margin: 18px 0; background: var(--ice); border: 1px solid var(--border); border-left: 5px solid var(--accent); }
+    .warning { background: var(--warning-bg); border-color: var(--warning-border); border-left-color: #d59b16; }
+    .danger { background: var(--danger-bg); border-color: var(--danger-border); border-left-color: #c33; }
+    details { margin: 12px 0; padding: 14px 16px; background: #f7fbff; border: 1px solid var(--border); border-radius: 14px; }
+    summary { cursor: pointer; font-weight: 800; color: var(--accent-dark); }
+    details p { margin: 10px 0 0; }
+    .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; margin-top: 10px; }
+    .toc a { display: block; padding: 8px 10px; background: #f7fbff; border: 1px solid var(--border); border-radius: 12px; text-decoration: none; }
+    .fineprint { color: var(--muted); font-size: 0.94rem; }
+    footer { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.92rem; }
+    footer .links { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
+    @media (max-width: 780px) { .card.half, .card.third { grid-column: span 12; } .toc { grid-template-columns: 1fr; } .hero, header.hero { padding: 28px 22px; } }
 
-    .page {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 18px 64px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 18px;
-      color: var(--accent-dark);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .back-link:hover,
-    a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 45%, #f7fcff 100%);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 34px;
-      box-shadow: 0 8px 24px rgba(30, 88, 140, 0.08);
-      margin-bottom: 22px;
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(2rem, 5vw, 3rem);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
-
-    .subtitle {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .notice {
-      background: var(--ice);
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--accent);
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin: 22px 0;
-    }
-
-    main {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px 34px;
-      box-shadow: 0 8px 24px rgba(30, 88, 140, 0.06);
-    }
-
-    h2 {
-      margin-top: 34px;
-      padding-top: 8px;
-      font-size: 1.45rem;
-      letter-spacing: -0.01em;
-    }
-
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    h3 {
-      margin-top: 24px;
-      font-size: 1.12rem;
-    }
-
-    p, li {
-      font-size: 1rem;
-    }
-
-    ul {
-      padding-left: 1.4rem;
-    }
-
-    a {
-      color: var(--accent-dark);
-      word-break: break-word;
-    }
-
-    .table-wrap {
-      overflow-x: auto;
-      margin: 18px 0;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 680px;
-      background: #fff;
-    }
-
-    th, td {
-      text-align: left;
-      vertical-align: top;
-      padding: 13px 14px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    th {
-      background: #f0f8ff;
-      color: #25324a;
-      font-weight: 700;
-    }
-
-    tr:last-child td {
-      border-bottom: 0;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    footer {
-      margin-top: 24px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 700px) {
-      header,
-      main {
-        padding: 22px;
-      }
-
-      .page {
-        padding-top: 18px;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="page">
-    <a class="back-link" href="index.html">&larr; Support</a>
-
-    <header>
-      <h1>Privacy Policy</h1>
-      <p class="subtitle"><strong>Blizzard Battleground</strong> &middot; Effective Date: June 13, 2026 &middot; Last Updated: June 13, 2026</p>
-    </header>
-
-    <div class="notice">
-      <strong>Summary:</strong> Blizzard Battleground does not require an account and does not ask you to provide your name, email address, phone number, or payment card information to play. The App may use third-party services, including Google AdMob and Apple services, that collect or process certain information as described below.
+  <main class="page">
+    <div class="topbar">
+      <a class="brand-mini" href="index.html" aria-label="Blizzard Battleground home"><span class="logo-dot">❄️</span><span>Blizzard Battleground</span></a>
+      <nav aria-label="Site navigation">
+        <a href="index.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
     </div>
 
-    <main>
-      <section>
-        <h2>1. Introduction</h2>
-        <p>
-          This Privacy Policy explains how Blizzard Battleground (the “App”), developed and published by Amiel Herrick (“we,” “us,” or “our”), handles information when you download, access, or use the App. This Privacy Policy applies only to Blizzard Battleground and not to any third-party websites, platforms, services, advertisements, or payment systems that may be linked to or used through the App.
-        </p>
-        <p>
-          By using the App, you acknowledge that you have read this Privacy Policy and understand the information practices described here. If you do not agree with this Privacy Policy, do not use the App.
-        </p>
-      </section>
+    <header class="hero">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">This Privacy Policy explains how Blizzard Battleground, developed by Amiel Herrick (“we,” “us,” or “our”), handles information when you use the App.</p>
+      <p class="meta"><strong>Effective date:</strong> June 13, 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> June 13, 2026</p>
+    </header>
 
-      <section>
-        <h2>2. Information We Do Not Directly Collect</h2>
-        <p>
-          We do not require you to create an account to play Blizzard Battleground. We do not directly ask you to provide, and we do not directly collect or store, the following personal information:
-        </p>
+    <section class="card">
+      <div class="notice">
+        <strong>Plain-language summary:</strong> The App does not require you to create an account and we do not directly collect your name, email address, or payment card details to let you play. However, the App may use third-party services such as Google AdMob and Apple App Store services that may collect data as described below.
+      </div>
+      <h2>Contents</h2>
+      <div class="toc">
+        <a href="#scope">1. Scope</a><a href="#collect">2. Information Collected</a>
+        <a href="#use">3. How Information Is Used</a><a href="#third-parties">4. Third-Party Services</a>
+        <a href="#ads">5. Advertising and Tracking Choices</a><a href="#purchases">6. Purchases</a>
+        <a href="#children">7. Children’s Privacy</a><a href="#rights">8. Privacy Rights</a>
+        <a href="#retention">9. Retention</a><a href="#security">10. Security</a>
+        <a href="#international">11. International Users</a><a href="#changes">12. Changes</a>
+        <a href="#contact">13. Contact</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="scope">
+        <h2>1. Scope</h2>
+        <p>This Privacy Policy applies to the iOS game Blizzard Battleground and related support pages. It does not apply to websites, platforms, or services operated by third parties, including Apple or Google, except where we describe our use of those services in the App.</p>
+      </article>
+
+      <article class="card" id="collect">
+        <h2>2. Information We Collect</h2>
+        <p>We do not require you to create an account or provide personal information such as your name or email address to play the App. However, the App may involve the following categories of information:</p>
         <ul>
-          <li>Name;</li>
-          <li>Email address;</li>
-          <li>Mailing address;</li>
-          <li>Phone number;</li>
-          <li>Username or password;</li>
-          <li>Government identification numbers;</li>
-          <li>Payment card numbers or bank account information; or</li>
-          <li>Precise GPS location.</li>
+          <li><strong>Advertising data:</strong> Google AdMob may collect or receive device information, IP address, approximate location derived from IP address, advertising identifiers, ad interactions, and related data used to provide, measure, limit, and improve ads.</li>
+          <li><strong>Device and usage data:</strong> The App or third-party services may collect app interactions, gameplay events, device type, operating system version, app version, language, region, and performance data.</li>
+          <li><strong>Diagnostics:</strong> Crash logs, performance data, and similar technical information may be collected to identify bugs and improve reliability.</li>
+          <li><strong>Purchase information:</strong> Apple processes in-app purchases. We do not collect or store your payment card details. We may receive limited transaction confirmation information needed to deliver purchased items or troubleshoot purchase issues.</li>
+          <li><strong>Support communications:</strong> If you email us, we receive the information you choose to provide, such as your email address, message, screenshots, and purchase troubleshooting details.</li>
         </ul>
-      </section>
+      </article>
 
-      <section>
-        <h2>3. Information That May Be Collected Automatically</h2>
-        <p>
-          Although we do not directly collect account registration information, the App may include third-party software development kits, operating system features, advertising services, analytics tools, crash reporting tools, or Apple services that automatically collect or process certain information from your device or your use of the App.
-        </p>
-
-        <div class="table-wrap">
-          <table aria-label="Types of information that may be collected">
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Examples</th>
-                <th>Purpose</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Device and technical information</td>
-                <td>Device model, operating system version, app version, language settings, time zone, network information, IP address, approximate location inferred from IP address, and similar technical data.</td>
-                <td>App functionality, security, troubleshooting, fraud prevention, ad delivery, analytics, and performance monitoring.</td>
-              </tr>
-              <tr>
-                <td>Advertising information</td>
-                <td>Advertising identifiers, ad interaction data, ad impressions, ad clicks, ad requests, and information used to deliver, limit, measure, or personalize ads.</td>
-                <td>Showing ads, measuring ad performance, preventing invalid activity, limiting ad frequency, and, where permitted, personalizing advertising.</td>
-              </tr>
-              <tr>
-                <td>Diagnostics and performance information</td>
-                <td>Crash logs, launch time, performance data, error reports, battery or memory usage related to the App, and similar diagnostics.</td>
-                <td>Maintaining, debugging, securing, and improving the App.</td>
-              </tr>
-              <tr>
-                <td>Purchase information</td>
-                <td>Information that an in-app purchase occurred, product identifier, transaction status, receipts, or purchase validation information. We do not receive your payment card details.</td>
-                <td>Processing in-app purchases, restoring purchases where applicable, verifying transactions, preventing fraud, and providing purchased items.</td>
-              </tr>
-              <tr>
-                <td>Gameplay or app activity information</td>
-                <td>Game progress, level completion, coin balances, selected items, settings, or similar app activity data stored on your device or processed by services used by the App.</td>
-                <td>Providing gameplay features, saving preferences, improving balance and performance, and supporting App functionality.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section>
-        <h2>4. How We Use Information</h2>
-        <p>
-          We and our service providers may use information described in this Privacy Policy for the following purposes:
-        </p>
+      <article class="card" id="use">
+        <h2>3. How Information Is Used</h2>
+        <p>Information may be used to:</p>
         <ul>
-          <li>To operate, maintain, and provide the App;</li>
-          <li>To save or restore gameplay features, settings, in-app purchase entitlements, or related App functionality;</li>
-          <li>To display advertisements and measure advertising performance;</li>
-          <li>To personalize ads where permitted by your device settings, consent choices, and applicable law;</li>
-          <li>To process in-app purchases through Apple;</li>
-          <li>To detect, investigate, and prevent fraud, abuse, invalid ad activity, security incidents, or technical issues;</li>
-          <li>To analyze App performance, diagnose crashes, and improve the App;</li>
-          <li>To respond to user requests and provide support; and</li>
-          <li>To comply with legal obligations, enforce our rights, and protect the rights, safety, and property of users, us, and others.</li>
+          <li>Operate, maintain, and improve the App.</li>
+          <li>Display, personalize, measure, limit, and improve advertising, where permitted.</li>
+          <li>Provide optional rewarded ads and confirm reward eligibility.</li>
+          <li>Process and verify in-app purchases through Apple.</li>
+          <li>Diagnose crashes, bugs, fraud, abuse, or technical problems.</li>
+          <li>Respond to support, privacy, copyright, or legal requests.</li>
+          <li>Comply with applicable law, platform rules, and enforcement requests.</li>
         </ul>
-      </section>
+      </article>
 
-      <section>
-        <h2>5. Advertising and Google AdMob</h2>
-        <p>
-          The App uses Google AdMob to display advertisements. Google and its advertising partners may collect, receive, or use device information, IP address, advertising identifiers, app activity, ad interaction information, approximate location, and other information to provide ads, limit ad frequency, measure ad performance, detect fraud or invalid activity, and, where permitted, personalize ads.
-        </p>
-        <p>
-          Google’s use of information is governed by Google’s policies, including:
-        </p>
+      <article class="card" id="third-parties">
+        <h2>4. Third-Party Services</h2>
+        <p>The App may use third-party services that operate under their own privacy policies and terms:</p>
         <ul>
-          <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
-          <li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer">How Google uses information from sites or apps that use Google services</a></li>
-          <li><a href="https://support.google.com/admob/answer/6128543" rel="noopener noreferrer">Google AdMob Policies and Restrictions</a></li>
-          <li><a href="https://www.google.com/about/company/user-consent-policy/" rel="noopener noreferrer">Google EU User Consent Policy</a></li>
+          <li><strong>Google AdMob:</strong> Used to show ads, including optional rewarded ads. Google may process data for ad serving, frequency capping, fraud prevention, measurement, and personalization where allowed.</li>
+          <li><strong>Apple App Store and In-App Purchase:</strong> Used to distribute the App and process purchases. Apple handles payment processing and refund workflows.</li>
+          <li><strong>Apple device and iOS services:</strong> iOS settings may control tracking permissions, Apple advertising settings, purchase restrictions, and other device-level privacy choices.</li>
         </ul>
-        <p>
-          If the App uses ad mediation, bidding, or additional ad networks in the future, additional advertising partners may also process information to deliver and measure ads. We will update this Privacy Policy when materially different third-party ad partners are added.
-        </p>
-      </section>
+        <p>We are not responsible for third-party privacy practices. Please review Google’s and Apple’s privacy policies for more information.</p>
+      </article>
 
-      <section>
-        <h2>6. Apple Services and In-App Purchases</h2>
-        <p>
-          In-app purchases are processed by Apple through the App Store. We do not collect or store your payment card number, bank account information, Apple ID password, or other payment credentials. Apple may process purchase information, receipts, tax information, device information, and account information according to Apple’s own privacy practices.
-        </p>
-        <p>
-          Apple’s privacy practices are described in the <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple Privacy Policy</a>. You can manage Apple ID, subscription, purchase, and payment settings through your Apple account and device settings.
-        </p>
-      </section>
-
-      <section>
-        <h2>7. App Tracking Transparency, Personalized Advertising, and Your Choices</h2>
-        <p>
-          Depending on your jurisdiction, device settings, and the version of the App you use, the App or its third-party services may request permission to track your activity across other companies’ apps and websites for advertising or measurement purposes. On iOS, this permission is managed through Apple’s App Tracking Transparency framework.
-        </p>
-        <p>
-          You can manage ad tracking and personalization choices through your device settings, including:
-        </p>
+      <article class="card" id="ads">
+        <h2>5. Advertising, App Tracking Transparency, and Your Choices</h2>
+        <p>The App may show ads through Google AdMob. Ads may be contextual or personalized depending on your device settings, region, consent choices, and applicable law.</p>
         <ul>
-          <li><strong>App Tracking Transparency:</strong> Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
-          <li><strong>Apple personalized ads:</strong> Settings &gt; Privacy &amp; Security &gt; Apple Advertising.</li>
-          <li><strong>AdMob or Google ad choices:</strong> Google may provide additional advertising controls through Google settings and Google’s privacy tools.</li>
+          <li><strong>App Tracking Transparency:</strong> On iOS, the App may request permission before tracking your activity across other companies’ apps and websites for advertising or measurement purposes. You can manage this through iOS Settings.</li>
+          <li><strong>Apple advertising settings:</strong> You can manage Apple advertising personalization through iOS Settings &gt; Privacy &amp; Security &gt; Apple Advertising.</li>
+          <li><strong>AdMob consent:</strong> In certain regions, such as the EEA, UK, and Switzerland, the App may ask for consent before using certain data for personalized ads or accessing device storage where legally required.</li>
+          <li><strong>Privacy choices:</strong> If the App provides a Privacy Choices or Manage Consent option, you can use it to review or change available ad consent selections.</li>
         </ul>
-        <p>
-          If you deny tracking permission, reset advertising identifiers, disable personalized ads, or make other privacy choices, you may still see ads, but they may be less relevant or may be based on contextual information rather than personalized advertising identifiers.
-        </p>
-      </section>
+      </article>
 
-      <section>
-        <h2>8. Consent for Users in the EEA, United Kingdom, and Switzerland</h2>
-        <p>
-          For users located in the European Economic Area, the United Kingdom, or Switzerland, we and our advertising partners may be required to obtain consent before storing or accessing information on your device or using personal data for personalized advertising, measurement, or related purposes. Where required, the App may display a consent message or privacy choices screen provided by Google, Apple, or another consent management provider.
-        </p>
-        <p>
-          You may be able to change or withdraw your consent through the App’s privacy options, the consent message, your device settings, or the applicable third-party privacy controls. Withdrawing consent does not affect processing that occurred before the withdrawal.
-        </p>
-      </section>
+      <article class="card" id="purchases">
+        <h2>6. In-App Purchases</h2>
+        <p>Purchases, including coin packs or other digital items, are processed by Apple. We do not receive or store your payment card number. Apple may provide us with limited transaction information needed to validate purchases, deliver digital items, prevent fraud, and troubleshoot support requests.</p>
+      </article>
 
-      <section>
-        <h2>9. Legal Bases for Processing Where Required</h2>
-        <p>
-          Where privacy laws require a legal basis for processing, we and our service providers may process information based on one or more of the following legal bases:
-        </p>
-        <ul>
-          <li><strong>Consent:</strong> For personalized advertising, device access, tracking, or similar activities where consent is required.</li>
-          <li><strong>Contract:</strong> To provide the App, process in-app purchases, and deliver requested features.</li>
-          <li><strong>Legitimate interests:</strong> To maintain, secure, improve, analyze, and protect the App; prevent fraud; and provide non-personalized or contextual ads where permitted.</li>
-          <li><strong>Legal obligations:</strong> To comply with applicable laws, tax requirements, lawful requests, or regulatory obligations.</li>
-        </ul>
-      </section>
+      <article class="card" id="children">
+        <h2>7. Children’s Privacy</h2>
+        <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information to us, contact us and we will take appropriate steps to address the issue.</p>
+        <p>Parents and guardians can use iOS parental controls, purchase restrictions, App Tracking Transparency controls, and advertising settings to manage a child’s app experience.</p>
+      </article>
 
-      <section>
-        <h2>10. Sharing of Information</h2>
-        <p>
-          We may share or allow access to information in the following circumstances:
-        </p>
-        <ul>
-          <li><strong>Service providers and SDK partners:</strong> Such as Google AdMob, Apple, analytics providers, crash reporting providers, hosting providers, and other vendors that help operate, secure, monetize, or improve the App.</li>
-          <li><strong>Advertising partners:</strong> To deliver, measure, limit, and, where permitted, personalize ads.</li>
-          <li><strong>Legal and safety purposes:</strong> When reasonably necessary to comply with law, legal process, enforce our rights, prevent fraud or abuse, investigate security issues, or protect users and others.</li>
-          <li><strong>Business transfers:</strong> If the App or related assets are sold, transferred, merged, reorganized, or assigned, information may be transferred as part of that transaction, subject to this Privacy Policy or another policy disclosed to you.</li>
-        </ul>
-        <p>
-          We do not directly sell your name, email address, or account registration information because we do not collect that information. However, some advertising activities may be considered “sharing,” “selling,” “targeted advertising,” or “cross-context behavioral advertising” under certain privacy laws. You may use the choices described in this Privacy Policy to limit those activities where applicable.
-        </p>
-      </section>
+      <article class="card" id="rights">
+        <h2>8. Privacy Rights and Requests</h2>
+        <p>Depending on where you live, you may have rights to request access, correction, deletion, portability, or restriction of certain personal information, or to object to or opt out of certain processing, including targeted advertising or sale/sharing where applicable.</p>
+        <p>Because we do not maintain user accounts and do not directly store most app usage or advertising data, we may not be able to identify data associated with a particular user unless you provide enough information to verify and process the request. Where data is controlled by a third party, such as Apple or Google, we may direct you to that third party’s privacy tools or request process.</p>
+      </article>
 
-      <section>
-        <h2>11. Data Retention</h2>
-        <p>
-          We do not maintain a user account database for the App. Information stored locally on your device may remain until you delete the App, clear local data, or reset your device, depending on the type of information and device behavior. Third-party services retain information according to their own privacy policies, legal obligations, and business needs.
-        </p>
-        <p>
-          We retain support communications, if you contact us, for as long as reasonably necessary to respond, resolve issues, maintain records, protect our rights, and comply with legal obligations.
-        </p>
-      </section>
+      <article class="card" id="retention">
+        <h2>9. Data Retention</h2>
+        <p>We retain support emails and related records only as long as reasonably necessary for support, legal, safety, fraud prevention, and business purposes. Data collected by Apple, Google, or other third-party services is retained according to their own policies.</p>
+      </article>
 
-      <section>
-        <h2>12. Data Security</h2>
-        <p>
-          We use reasonable administrative, technical, and organizational measures designed to protect information associated with the App. However, no method of transmission, processing, or storage is completely secure. We cannot guarantee absolute security of information processed by the App, Apple, Google, or other third-party services.
-        </p>
-      </section>
+      <article class="card" id="security">
+        <h2>10. Security</h2>
+        <p>We use reasonable administrative and technical measures intended to protect information we handle. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+      </article>
 
-      <section>
-        <h2>13. Children’s Privacy</h2>
-        <p>
-          Blizzard Battleground is not directed to children under 13 years of age. We do not knowingly collect personal information directly from children under 13. If you believe that a child under 13 has provided personal information to us, please contact us using the contact information below and we will take reasonable steps to delete or address the information, if applicable.
-        </p>
-        <p>
-          If you choose to make the App available to children or submit it under any children-directed category or “Kids” designation, additional legal, advertising, consent, and platform requirements may apply, including restrictions on interest-based advertising and third-party tracking. This Privacy Policy should be reviewed and updated before any such change.
-        </p>
-      </section>
+      <article class="card" id="international">
+        <h2>11. International Users</h2>
+        <p>The App and third-party services may process information in the United States and other countries. Privacy laws may differ from those in your location.</p>
+      </article>
 
-      <section>
-        <h2>14. Privacy Rights and Requests</h2>
-        <p>
-          Depending on where you live, you may have rights to request access to, correction of, deletion of, portability of, restriction of, or objection to certain personal information. You may also have the right to opt out of certain targeted advertising, sharing, or sale of personal information, and the right not to be discriminated against for exercising privacy rights.
-        </p>
-        <p>
-          Because we do not directly maintain user accounts or a user identity database for the App, we may not be able to identify information associated with you without additional details, such as device identifiers, transaction information, support emails, or information held by Apple, Google, or another service provider. We will respond to privacy requests as required by applicable law. Where information is controlled by a third party, we may direct you to that third party’s privacy controls or request process.
-        </p>
-        <p>
-          To submit a privacy request, contact us at <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a>. Please include “Privacy Request” in the subject line and describe the request you are making.
-        </p>
-      </section>
+      <article class="card" id="changes">
+        <h2>12. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. If we make changes, we will update the effective date or last updated date and post the revised policy on this page.</p>
+      </article>
 
-      <section>
-        <h2>15. California Privacy Notice</h2>
-        <p>
-          This section applies to California residents to the extent California privacy laws apply to the App. The categories of personal information that may be collected or processed by the App or third-party services are described above and may include identifiers, internet or electronic network activity information, commercial information related to in-app purchases, approximate geolocation, device information, advertising information, and diagnostics.
-        </p>
-        <p>
-          We do not directly collect sensitive personal information such as government identification numbers, financial account credentials, precise geolocation, racial or ethnic origin, religious beliefs, health diagnosis, biometric information, or the contents of private communications through the App.
-        </p>
-        <p>
-          We do not knowingly sell or share personal information of children under 16. To the extent advertising identifiers or similar information are considered a “sale” or “sharing” under California law, you may opt out by using the iOS privacy controls described above, disabling tracking permission, limiting personalized advertising, or contacting us at <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a>.
-        </p>
-      </section>
-
-      <section>
-        <h2>16. International Users</h2>
-        <p>
-          The App is operated from the United States. If you access the App from outside the United States, information may be processed in the United States or other countries where we, Apple, Google, or service providers operate. These countries may have privacy laws that differ from those in your location.
-        </p>
-      </section>
-
-      <section>
-        <h2>17. Third-Party Links and Services</h2>
-        <p>
-          The App, advertisements, App Store listing, or support pages may contain links to third-party websites, services, offers, or content. We are not responsible for the privacy practices, content, security, or policies of third parties. Review the privacy policies of any third-party services you choose to use.
-        </p>
-      </section>
-
-      <section>
-        <h2>18. Changes to This Privacy Policy</h2>
-        <p>
-          We may update this Privacy Policy from time to time. If we make changes, we will update the “Last Updated” date at the top of this page. Changes are effective when posted unless a different effective date is stated. Your continued use of the App after an updated Privacy Policy is posted means you acknowledge the updated policy.
-        </p>
-      </section>
-
-      <section>
-        <h2>19. Contact Us</h2>
-        <p>
-          If you have questions, concerns, or privacy requests about this Privacy Policy or Blizzard Battleground, contact us at:
-        </p>
-        <p>
-          <strong>Amiel Herrick</strong><br />
-          Email: <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a><br />
-          App: Blizzard Battleground
-        </p>
-      </section>
-
-      <section>
-        <h2>20. Important Note</h2>
-        <p class="small">
-          This Privacy Policy is intended to provide a clear disclosure of the App’s privacy practices based on the information available at the time it was prepared. It is not a substitute for legal advice. Privacy, advertising, children’s data, consumer protection, and app platform requirements can change, and requirements may vary depending on how the App is configured, where it is distributed, which SDKs are used, whether ads are personalized, and whether the App is directed to children.
-        </p>
-      </section>
-    </main>
+      <article class="card" id="contact">
+        <h2>13. Contact Us</h2>
+        <p>For privacy questions or requests, contact:</p>
+        <p><strong><a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></strong></p>
+      </article>
+    </section>
 
     <footer>
-      &copy; 2026 Amiel Herrick. Blizzard Battleground. All rights reserved.
+      <div class="links">
+        <a href="index.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
+      </div>
+      <div>© 2026 Amiel Herrick. Blizzard Battleground. All rights reserved.</div>
+      <div class="fineprint">This website provides support and legal information for the iOS app Blizzard Battleground.</div>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
