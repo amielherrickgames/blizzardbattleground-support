@@ -1,228 +1,412 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="description" content="Privacy Policy for Blizzard Battleground, an iOS game developed by Amiel Herrick." />
-  <meta name="theme-color" content="#2b7de9" />
-  <meta property="og:title" content="Privacy Policy | Blizzard Battleground" />
-  <meta property="og:description" content="Privacy Policy for Blizzard Battleground, an iOS game developed by Amiel Herrick." />
-  <meta property="og:type" content="website" />
-  <title>Privacy Policy | Blizzard Battleground</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frostillery! Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Frostillery!, a mobile tank duel game for iOS.">
   <style>
-
     :root {
-      --bg: #f6fbff;
-      --card: #ffffff;
-      --text: #172033;
-      --muted: #5f6f89;
-      --accent: #2b7de9;
-      --accent-dark: #155db6;
-      --border: #d9e7f7;
-      --ice: #eef8ff;
-      --snow: #ffffff;
-      --warning-bg: #fff8e6;
-      --warning-border: #f1d28a;
-      --danger-bg: #fff0f0;
-      --danger-border: #f0b8b8;
+      color-scheme: light;
+      --bg: #f4fbff;
+      --panel: #ffffff;
+      --ink: #17324d;
+      --muted: #56718a;
+      --line: #cfe5f5;
+      --accent: #1677b8;
+      --accent-dark: #0f527f;
+      --ice: #e4f6ff;
+      --snow: #f9fdff;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.65;
-      color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(158, 218, 255, 0.55), transparent 34rem),
-        linear-gradient(180deg, #eaf7ff 0%, var(--bg) 45%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(132, 206, 244, 0.45), transparent 32rem),
+        linear-gradient(180deg, var(--bg), #ffffff 55%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
     }
-    .page { max-width: 1080px; margin: 0 auto; padding: 28px 18px 64px; }
-    a { color: var(--accent-dark); font-weight: 650; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; word-break: break-word; }
-    a:hover { color: var(--accent); }
-    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 18px; color: var(--muted); font-size: 0.95rem; flex-wrap: wrap; }
-    .brand-mini { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--accent-dark); letter-spacing: -0.01em; text-decoration: none; }
-    .logo-dot { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 12px; background: linear-gradient(135deg, #d8f2ff, #ffffff); border: 1px solid var(--border); box-shadow: 0 6px 16px rgba(30, 88, 140, 0.12); font-size: 1.15rem; }
-    nav { display: flex; gap: 14px; flex-wrap: wrap; }
-    nav a { text-decoration: none; }
-    .hero, header.hero { background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 48%, #f7fcff 100%); border: 1px solid var(--border); border-radius: 24px; padding: clamp(30px, 5vw, 52px); box-shadow: 0 12px 32px rgba(30, 88, 140, 0.1); position: relative; overflow: hidden; margin-bottom: 22px; }
-    .hero::after { content: ""; position: absolute; width: 280px; height: 280px; right: -90px; top: -100px; border-radius: 50%; background: radial-gradient(circle, rgba(43, 125, 233, 0.12), rgba(43, 125, 233, 0)); pointer-events: none; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--ice); color: var(--accent-dark); border: 1px solid var(--border); font-size: 0.9rem; font-weight: 750; margin: 0 0 14px; }
-    h1 { margin: 0 0 10px; font-size: clamp(2.15rem, 6vw, 4.15rem); line-height: 1.02; letter-spacing: -0.055em; }
-    .subtitle { margin: 0; color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.22rem); max-width: 760px; }
-    .meta { margin-top: 18px; color: var(--muted); font-size: 0.98rem; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
-    .card { grid-column: span 12; background: rgba(255,255,255,0.92); border: 1px solid var(--border); border-radius: 20px; padding: 24px; box-shadow: 0 10px 28px rgba(30,88,140,0.07); }
-    .card.half { grid-column: span 6; }
-    .card.third { grid-column: span 4; }
-    h2 { margin: 0 0 12px; color: var(--accent-dark); font-size: 1.35rem; line-height: 1.2; letter-spacing: -0.015em; }
-    h3 { margin: 22px 0 8px; font-size: 1.05rem; color: #22314d; }
-    p { margin: 0 0 12px; }
-    ul { margin: 10px 0 0 1.25rem; padding: 0; }
-    li { margin: 7px 0; }
-    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: var(--accent-dark); color: white; text-decoration: none; box-shadow: 0 8px 20px rgba(21,93,182,0.18); }
-    .button.secondary { background: #ffffff; color: var(--accent-dark); border: 1px solid var(--border); box-shadow: none; }
-    .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: var(--ice); border: 1px solid var(--border); color: var(--accent-dark); font-size: 0.88rem; font-weight: 700; }
-    .notice { border-radius: 16px; padding: 16px 18px; margin: 18px 0; background: var(--ice); border: 1px solid var(--border); border-left: 5px solid var(--accent); }
-    .warning { background: var(--warning-bg); border-color: var(--warning-border); border-left-color: #d59b16; }
-    .danger { background: var(--danger-bg); border-color: var(--danger-border); border-left-color: #c33; }
-    details { margin: 12px 0; padding: 14px 16px; background: #f7fbff; border: 1px solid var(--border); border-radius: 14px; }
-    summary { cursor: pointer; font-weight: 800; color: var(--accent-dark); }
-    details p { margin: 10px 0 0; }
-    .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; margin-top: 10px; }
-    .toc a { display: block; padding: 8px 10px; background: #f7fbff; border: 1px solid var(--border); border-radius: 12px; text-decoration: none; }
-    .fineprint { color: var(--muted); font-size: 0.94rem; }
-    footer { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.92rem; }
-    footer .links { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
-    @media (max-width: 780px) { .card.half, .card.third { grid-column: span 12; } .toc { grid-template-columns: 1fr; } .hero, header.hero { padding: 28px 22px; } }
 
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 68px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #9ed5f4;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #dff6ff, #ffffff);
+      color: var(--accent-dark);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 8px;
+    }
+
+    .nav-links a[aria-current="page"],
+    .nav-links a:hover {
+      background: var(--ice);
+    }
+
+    main {
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(244, 251, 255, 0.95));
+      box-shadow: 0 20px 50px rgba(26, 80, 122, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+      margin-top: 32px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 16px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.84);
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+    }
+
+    .toc a {
+      display: block;
+      color: var(--accent-dark);
+      text-decoration: none;
+      padding: 6px 0;
+      font-size: 0.94rem;
+    }
+
+    .policy {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    section + section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.42rem;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px 1.25rem;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .note {
+      padding: 14px 16px;
+      border: 1px solid #b9def1;
+      border-radius: 8px;
+      background: var(--snow);
+      color: var(--accent-dark);
+      font-weight: 650;
+    }
+
+    .contact-box {
+      padding: 18px;
+      border: 1px solid #b8ddf2;
+      border-radius: 8px;
+      background: var(--ice);
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+      color: var(--muted);
+      background: #ffffff;
+    }
+
+    @media (max-width: 780px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      .hero,
+      .policy {
+        padding: 22px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="page">
-    <div class="topbar">
-      <a class="brand-mini" href="index.html" aria-label="Blizzard Battleground home"><span class="logo-dot">❄️</span><span>Blizzard Battleground</span></a>
-      <nav aria-label="Site navigation">
-        <a href="index.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="support.html" aria-label="Frostillery support home">
+        <span class="mark" aria-hidden="true">F</span>
+        <span>Frostillery!</span>
+      </a>
+      <nav class="nav-links" aria-label="Legal and support pages">
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
       </nav>
     </div>
+  </header>
 
-    <header class="hero">
-      <p class="eyebrow">Privacy Policy</p>
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">This Privacy Policy explains how Blizzard Battleground, developed by Amiel Herrick (“we,” “us,” or “our”), handles information when you use the App.</p>
-      <p class="meta"><strong>Effective date:</strong> June 13, 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> June 13, 2026</p>
-    </header>
-
-    <section class="card">
-      <div class="notice">
-        <strong>Plain-language summary:</strong> The App does not require you to create an account and we do not directly collect your name, email address, or payment card details to let you play. However, the App may use third-party services such as Google AdMob and Apple App Store services that may collect data as described below.
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Frostillery!</h1>
+        <p class="lede">This Privacy Policy explains how information may be collected, used, and shared when you play Frostillery!, including information handled through Google AdMob ads and Apple in-app purchases.</p>
       </div>
-      <h2>Contents</h2>
-      <div class="toc">
-        <a href="#scope">1. Scope</a><a href="#collect">2. Information Collected</a>
-        <a href="#use">3. How Information Is Used</a><a href="#third-parties">4. Third-Party Services</a>
-        <a href="#ads">5. Advertising and Tracking Choices</a><a href="#purchases">6. Purchases</a>
-        <a href="#children">7. Children’s Privacy</a><a href="#rights">8. Privacy Rights</a>
-        <a href="#retention">9. Retention</a><a href="#security">10. Security</a>
-        <a href="#international">11. International Users</a><a href="#changes">12. Changes</a>
-        <a href="#contact">13. Contact</a>
+
+      <div class="content">
+        <aside class="toc" aria-label="Privacy policy sections">
+          <h2>Sections</h2>
+          <a href="#overview">Overview</a>
+          <a href="#information">Information We Collect</a>
+          <a href="#use">How We Use Information</a>
+          <a href="#ads">Ads and AdMob</a>
+          <a href="#purchases">In-App Purchases</a>
+          <a href="#sharing">Sharing</a>
+          <a href="#choices">Your Choices</a>
+          <a href="#children">Children</a>
+          <a href="#retention">Retention</a>
+          <a href="#changes">Changes</a>
+          <a href="#contact">Contact</a>
+        </aside>
+
+        <article class="policy">
+          <section id="overview">
+            <h2>Overview</h2>
+            <p><strong>Effective date:</strong> June 23, 2026</p>
+            <p>Frostillery! is a mobile game published by Amiel Herrick. The game is designed for casual entertainment and may include advertisements, gameplay progression, virtual coins or items, and optional in-app purchases.</p>
+            <p>This policy applies to Frostillery! on iOS and to related support communications. It does not apply to websites, apps, or services operated by third parties except where described below.</p>
+            <p class="note">Frostillery! does not require users to create an account, and the developer does not collect credit card numbers or other payment card details.</p>
+          </section>
+
+          <section id="information">
+            <h2>Information We Collect</h2>
+            <p>Depending on how you use the game, the following categories of information may be collected by the app, by Apple, by Google AdMob, or by other service providers used to operate the game:</p>
+            <h3>Game and device information</h3>
+            <ul>
+              <li>Device type, operating system, app version, language, and general device settings.</li>
+              <li>Gameplay activity, such as level progress, coins, upgrades, skins, settings, and similar in-game status information.</li>
+              <li>Crash logs, diagnostics, performance data, and bug-related information.</li>
+            </ul>
+            <h3>Advertising information</h3>
+            <ul>
+              <li>Advertising identifiers, such as Apple’s Identifier for Advertisers, if permission is granted through iOS.</li>
+              <li>Approximate location inferred from IP address, ad interaction data, and other information used by advertising providers to deliver, measure, and improve ads.</li>
+            </ul>
+            <h3>Purchase information</h3>
+            <ul>
+              <li>Apple may process in-app purchases and provide transaction status or receipt information so the game can deliver purchased coins, items, or entitlements.</li>
+              <li>The developer does not receive your full payment card number, banking information, or Apple ID password.</li>
+            </ul>
+            <h3>Support information</h3>
+            <ul>
+              <li>If you email support, we may receive your email address, message, screenshots, device details you choose to provide, and any other information included in your request.</li>
+            </ul>
+          </section>
+
+          <section id="use">
+            <h2>How We Use Information</h2>
+            <p>Information may be used to:</p>
+            <ul>
+              <li>Operate the game and save or restore gameplay status where supported.</li>
+              <li>Display ads and measure ad performance.</li>
+              <li>Process in-app purchases and deliver virtual items.</li>
+              <li>Fix bugs, troubleshoot crashes, improve performance, and develop future updates.</li>
+              <li>Respond to support requests.</li>
+              <li>Prevent fraud, abuse, invalid ad traffic, or misuse of the app.</li>
+              <li>Comply with legal, tax, accounting, App Store, and platform obligations.</li>
+            </ul>
+          </section>
+
+          <section id="ads">
+            <h2>Ads and Google AdMob</h2>
+            <p>Frostillery! may show ads through Google AdMob. AdMob and its partners may collect and use information from your device to provide ads, limit repetitive ads, detect invalid activity, measure ad performance, and support personalized or non-personalized advertising depending on your settings, location, and consent choices.</p>
+            <p>On iOS, you may be asked whether you allow tracking for advertising purposes. If you do not allow tracking, the game may still show ads, but those ads may be less personalized.</p>
+            <p>You can learn more about Google’s privacy practices at <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and about Google’s ad technologies at <a href="https://policies.google.com/technologies/ads" rel="noopener">Google Advertising Policies and Technologies</a>.</p>
+          </section>
+
+          <section id="purchases">
+            <h2>In-App Purchases</h2>
+            <p>Frostillery! may offer optional in-app purchases, such as coin packs, upgrades, skins, or other virtual items. Purchases are processed by Apple through the App Store. Apple handles payment information and may provide the app with confirmation that a transaction was completed so the purchased item can be delivered.</p>
+            <p>In-app purchases are subject to Apple’s terms, payment rules, refund policies, and account settings. For purchase or refund issues, you may need to contact Apple Support or use Apple’s purchase history tools.</p>
+          </section>
+
+          <section id="sharing">
+            <h2>How Information Is Shared</h2>
+            <p>Information may be shared with:</p>
+            <ul>
+              <li><strong>Google AdMob and advertising partners</strong> to deliver, measure, and improve ads and detect invalid traffic.</li>
+              <li><strong>Apple</strong> to process in-app purchases, App Store distribution, diagnostics, and platform services.</li>
+              <li><strong>Service providers</strong> that help operate, support, secure, analyze, or improve the game.</li>
+              <li><strong>Legal or safety authorities</strong> if required by law or needed to protect rights, safety, users, or the integrity of the game.</li>
+            </ul>
+            <p>We do not sell your personal information directly to data brokers. Advertising providers may process data according to their own policies and your consent choices.</p>
+          </section>
+
+          <section id="choices">
+            <h2>Your Choices</h2>
+            <ul>
+              <li><strong>Tracking permission:</strong> You can manage app tracking choices in iOS Settings.</li>
+              <li><strong>Ad personalization:</strong> You can manage some Google ad personalization settings through your Google account and device settings.</li>
+              <li><strong>Purchases:</strong> You can manage subscriptions, purchase history, refunds, and family purchase controls through Apple’s App Store and Apple ID settings.</li>
+              <li><strong>Support emails:</strong> You may ask us to delete support emails unless retention is needed for legal, security, or dispute-resolution reasons.</li>
+              <li><strong>App removal:</strong> You can stop further app-based collection by deleting Frostillery! from your device.</li>
+            </ul>
+          </section>
+
+          <section id="children">
+            <h2>Children</h2>
+            <p>Frostillery! is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through a support request or other communication, please contact us so we can review and delete the information where appropriate.</p>
+          </section>
+
+          <section id="retention">
+            <h2>Retention and Security</h2>
+            <p>We keep information only as long as reasonably needed for the purposes described in this policy, including support, troubleshooting, legal compliance, accounting, security, and platform requirements. Third-party providers, including Google and Apple, may retain information according to their own policies.</p>
+            <p>No method of electronic storage or transmission is completely secure, but we take reasonable steps to protect support communications and app-related records within our control.</p>
+          </section>
+
+          <section id="changes">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the effective date above and post the revised policy at this page.</p>
+          </section>
+
+          <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-box">
+              <p><strong>Publisher:</strong> Amiel Herrick</p>
+              <p><strong>Email:</strong> <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></p>
+              <p>Please include “Frostillery Privacy” in the subject line if your message relates to privacy choices, data questions, or deletion requests.</p>
+            </div>
+          </section>
+        </article>
       </div>
-    </section>
-
-    <section class="grid">
-      <article class="card" id="scope">
-        <h2>1. Scope</h2>
-        <p>This Privacy Policy applies to the iOS game Blizzard Battleground and related support pages. It does not apply to websites, platforms, or services operated by third parties, including Apple or Google, except where we describe our use of those services in the App.</p>
-      </article>
-
-      <article class="card" id="collect">
-        <h2>2. Information We Collect</h2>
-        <p>We do not require you to create an account or provide personal information such as your name or email address to play the App. However, the App may involve the following categories of information:</p>
-        <ul>
-          <li><strong>Advertising data:</strong> Google AdMob may collect or receive device information, IP address, approximate location derived from IP address, advertising identifiers, ad interactions, and related data used to provide, measure, limit, and improve ads.</li>
-          <li><strong>Device and usage data:</strong> The App or third-party services may collect app interactions, gameplay events, device type, operating system version, app version, language, region, and performance data.</li>
-          <li><strong>Diagnostics:</strong> Crash logs, performance data, and similar technical information may be collected to identify bugs and improve reliability.</li>
-          <li><strong>Purchase information:</strong> Apple processes in-app purchases. We do not collect or store your payment card details. We may receive limited transaction confirmation information needed to deliver purchased items or troubleshoot purchase issues.</li>
-          <li><strong>Support communications:</strong> If you email us, we receive the information you choose to provide, such as your email address, message, screenshots, and purchase troubleshooting details.</li>
-        </ul>
-      </article>
-
-      <article class="card" id="use">
-        <h2>3. How Information Is Used</h2>
-        <p>Information may be used to:</p>
-        <ul>
-          <li>Operate, maintain, and improve the App.</li>
-          <li>Display, personalize, measure, limit, and improve advertising, where permitted.</li>
-          <li>Provide optional rewarded ads and confirm reward eligibility.</li>
-          <li>Process and verify in-app purchases through Apple.</li>
-          <li>Diagnose crashes, bugs, fraud, abuse, or technical problems.</li>
-          <li>Respond to support, privacy, copyright, or legal requests.</li>
-          <li>Comply with applicable law, platform rules, and enforcement requests.</li>
-        </ul>
-      </article>
-
-      <article class="card" id="third-parties">
-        <h2>4. Third-Party Services</h2>
-        <p>The App may use third-party services that operate under their own privacy policies and terms:</p>
-        <ul>
-          <li><strong>Google AdMob:</strong> Used to show ads, including optional rewarded ads. Google may process data for ad serving, frequency capping, fraud prevention, measurement, and personalization where allowed.</li>
-          <li><strong>Apple App Store and In-App Purchase:</strong> Used to distribute the App and process purchases. Apple handles payment processing and refund workflows.</li>
-          <li><strong>Apple device and iOS services:</strong> iOS settings may control tracking permissions, Apple advertising settings, purchase restrictions, and other device-level privacy choices.</li>
-        </ul>
-        <p>We are not responsible for third-party privacy practices. Please review Google’s and Apple’s privacy policies for more information.</p>
-      </article>
-
-      <article class="card" id="ads">
-        <h2>5. Advertising, App Tracking Transparency, and Your Choices</h2>
-        <p>The App may show ads through Google AdMob. Ads may be contextual or personalized depending on your device settings, region, consent choices, and applicable law.</p>
-        <ul>
-          <li><strong>App Tracking Transparency:</strong> On iOS, the App may request permission before tracking your activity across other companies’ apps and websites for advertising or measurement purposes. You can manage this through iOS Settings.</li>
-          <li><strong>Apple advertising settings:</strong> You can manage Apple advertising personalization through iOS Settings &gt; Privacy &amp; Security &gt; Apple Advertising.</li>
-          <li><strong>AdMob consent:</strong> In certain regions, such as the EEA, UK, and Switzerland, the App may ask for consent before using certain data for personalized ads or accessing device storage where legally required.</li>
-          <li><strong>Privacy choices:</strong> If the App provides a Privacy Choices or Manage Consent option, you can use it to review or change available ad consent selections.</li>
-        </ul>
-      </article>
-
-      <article class="card" id="purchases">
-        <h2>6. In-App Purchases</h2>
-        <p>Purchases, including coin packs or other digital items, are processed by Apple. We do not receive or store your payment card number. Apple may provide us with limited transaction information needed to validate purchases, deliver digital items, prevent fraud, and troubleshoot support requests.</p>
-      </article>
-
-      <article class="card" id="children">
-        <h2>7. Children’s Privacy</h2>
-        <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information to us, contact us and we will take appropriate steps to address the issue.</p>
-        <p>Parents and guardians can use iOS parental controls, purchase restrictions, App Tracking Transparency controls, and advertising settings to manage a child’s app experience.</p>
-      </article>
-
-      <article class="card" id="rights">
-        <h2>8. Privacy Rights and Requests</h2>
-        <p>Depending on where you live, you may have rights to request access, correction, deletion, portability, or restriction of certain personal information, or to object to or opt out of certain processing, including targeted advertising or sale/sharing where applicable.</p>
-        <p>Because we do not maintain user accounts and do not directly store most app usage or advertising data, we may not be able to identify data associated with a particular user unless you provide enough information to verify and process the request. Where data is controlled by a third party, such as Apple or Google, we may direct you to that third party’s privacy tools or request process.</p>
-      </article>
-
-      <article class="card" id="retention">
-        <h2>9. Data Retention</h2>
-        <p>We retain support emails and related records only as long as reasonably necessary for support, legal, safety, fraud prevention, and business purposes. Data collected by Apple, Google, or other third-party services is retained according to their own policies.</p>
-      </article>
-
-      <article class="card" id="security">
-        <h2>10. Security</h2>
-        <p>We use reasonable administrative and technical measures intended to protect information we handle. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
-      </article>
-
-      <article class="card" id="international">
-        <h2>11. International Users</h2>
-        <p>The App and third-party services may process information in the United States and other countries. Privacy laws may differ from those in your location.</p>
-      </article>
-
-      <article class="card" id="changes">
-        <h2>12. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. If we make changes, we will update the effective date or last updated date and post the revised policy on this page.</p>
-      </article>
-
-      <article class="card" id="contact">
-        <h2>13. Contact Us</h2>
-        <p>For privacy questions or requests, contact:</p>
-        <p><strong><a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></strong></p>
-      </article>
-    </section>
-
-    <footer>
-      <div class="links">
-        <a href="index.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
-      </div>
-      <div>© 2026 Amiel Herrick. Blizzard Battleground. All rights reserved.</div>
-      <div class="fineprint">This website provides support and legal information for the iOS app Blizzard Battleground.</div>
-    </footer>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Amiel Herrick. Frostillery! and related game content are owned by their respective rights holder.</p>
+    </div>
+  </footer>
 </body>
 </html>
