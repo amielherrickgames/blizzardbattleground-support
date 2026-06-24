@@ -1,201 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="description" content="Official support page for Blizzard Battleground, an iOS tank battle game by Amiel Herrick. Get help with purchases, ads, privacy, gameplay, and legal terms." />
-  <meta name="theme-color" content="#2b7de9" />
-  <meta property="og:title" content="Support | Blizzard Battleground" />
-  <meta property="og:description" content="Official support page for Blizzard Battleground, an iOS tank battle game by Amiel Herrick. Get help with purchases, ads, privacy, gameplay, and legal terms." />
-  <meta property="og:type" content="website" />
-  <title>Support | Blizzard Battleground</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frostillery! Support</title>
+  <meta name="description" content="Support page for Frostillery!, a mobile tank duel game for iOS.">
   <style>
-
     :root {
-      --bg: #f6fbff;
-      --card: #ffffff;
-      --text: #172033;
-      --muted: #5f6f89;
-      --accent: #2b7de9;
-      --accent-dark: #155db6;
-      --border: #d9e7f7;
-      --ice: #eef8ff;
-      --snow: #ffffff;
-      --warning-bg: #fff8e6;
-      --warning-border: #f1d28a;
-      --danger-bg: #fff0f0;
-      --danger-border: #f0b8b8;
+      color-scheme: light;
+      --bg: #f4fbff;
+      --panel: #ffffff;
+      --ink: #17324d;
+      --muted: #56718a;
+      --line: #cfe5f5;
+      --accent: #1677b8;
+      --accent-dark: #0f527f;
+      --ice: #e4f6ff;
+      --snow: #f9fdff;
+      --warning: #8b5a00;
+      --warning-bg: #fff7df;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.65;
-      color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(158, 218, 255, 0.55), transparent 34rem),
-        linear-gradient(180deg, #eaf7ff 0%, var(--bg) 45%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(132, 206, 244, 0.45), transparent 32rem),
+        linear-gradient(180deg, var(--bg), #ffffff 55%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
     }
-    .page { max-width: 1080px; margin: 0 auto; padding: 28px 18px 64px; }
-    a { color: var(--accent-dark); font-weight: 650; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; word-break: break-word; }
-    a:hover { color: var(--accent); }
-    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 18px; color: var(--muted); font-size: 0.95rem; flex-wrap: wrap; }
-    .brand-mini { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--accent-dark); letter-spacing: -0.01em; text-decoration: none; }
-    .logo-dot { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 12px; background: linear-gradient(135deg, #d8f2ff, #ffffff); border: 1px solid var(--border); box-shadow: 0 6px 16px rgba(30, 88, 140, 0.12); font-size: 1.15rem; }
-    nav { display: flex; gap: 14px; flex-wrap: wrap; }
-    nav a { text-decoration: none; }
-    .hero, header.hero { background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 48%, #f7fcff 100%); border: 1px solid var(--border); border-radius: 24px; padding: clamp(30px, 5vw, 52px); box-shadow: 0 12px 32px rgba(30, 88, 140, 0.1); position: relative; overflow: hidden; margin-bottom: 22px; }
-    .hero::after { content: ""; position: absolute; width: 280px; height: 280px; right: -90px; top: -100px; border-radius: 50%; background: radial-gradient(circle, rgba(43, 125, 233, 0.12), rgba(43, 125, 233, 0)); pointer-events: none; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--ice); color: var(--accent-dark); border: 1px solid var(--border); font-size: 0.9rem; font-weight: 750; margin: 0 0 14px; }
-    h1 { margin: 0 0 10px; font-size: clamp(2.15rem, 6vw, 4.15rem); line-height: 1.02; letter-spacing: -0.055em; }
-    .subtitle { margin: 0; color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.22rem); max-width: 760px; }
-    .meta { margin-top: 18px; color: var(--muted); font-size: 0.98rem; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
-    .card { grid-column: span 12; background: rgba(255,255,255,0.92); border: 1px solid var(--border); border-radius: 20px; padding: 24px; box-shadow: 0 10px 28px rgba(30,88,140,0.07); }
-    .card.half { grid-column: span 6; }
-    .card.third { grid-column: span 4; }
-    h2 { margin: 0 0 12px; color: var(--accent-dark); font-size: 1.35rem; line-height: 1.2; letter-spacing: -0.015em; }
-    h3 { margin: 22px 0 8px; font-size: 1.05rem; color: #22314d; }
-    p { margin: 0 0 12px; }
-    ul { margin: 10px 0 0 1.25rem; padding: 0; }
-    li { margin: 7px 0; }
-    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: var(--accent-dark); color: white; text-decoration: none; box-shadow: 0 8px 20px rgba(21,93,182,0.18); }
-    .button.secondary { background: #ffffff; color: var(--accent-dark); border: 1px solid var(--border); box-shadow: none; }
-    .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: var(--ice); border: 1px solid var(--border); color: var(--accent-dark); font-size: 0.88rem; font-weight: 700; }
-    .notice { border-radius: 16px; padding: 16px 18px; margin: 18px 0; background: var(--ice); border: 1px solid var(--border); border-left: 5px solid var(--accent); }
-    .warning { background: var(--warning-bg); border-color: var(--warning-border); border-left-color: #d59b16; }
-    .danger { background: var(--danger-bg); border-color: var(--danger-border); border-left-color: #c33; }
-    details { margin: 12px 0; padding: 14px 16px; background: #f7fbff; border: 1px solid var(--border); border-radius: 14px; }
-    summary { cursor: pointer; font-weight: 800; color: var(--accent-dark); }
-    details p { margin: 10px 0 0; }
-    .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; margin-top: 10px; }
-    .toc a { display: block; padding: 8px 10px; background: #f7fbff; border: 1px solid var(--border); border-radius: 12px; text-decoration: none; }
-    .fineprint { color: var(--muted); font-size: 0.94rem; }
-    footer { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.92rem; }
-    footer .links { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
-    @media (max-width: 780px) { .card.half, .card.third { grid-column: span 12; } .toc { grid-template-columns: 1fr; } .hero, header.hero { padding: 28px 22px; } }
 
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 68px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #9ed5f4;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #dff6ff, #ffffff);
+      color: var(--accent-dark);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 8px;
+    }
+
+    .nav-links a[aria-current="page"],
+    .nav-links a:hover {
+      background: var(--ice);
+    }
+
+    main {
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 18px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(244, 251, 255, 0.95));
+      box-shadow: 0 20px 50px rgba(26, 80, 122, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .primary-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--accent-dark);
+      border-radius: 8px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .card,
+    .wide-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .wide-card {
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.32rem;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 14px 1.25rem;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      padding: 14px 16px;
+      border: 1px solid #f1d28b;
+      border-radius: 8px;
+      background: var(--warning-bg);
+      color: var(--warning);
+      font-weight: 650;
+    }
+
+    .support-list {
+      display: grid;
+      gap: 10px;
+      margin: 16px 0 0;
+    }
+
+    .support-item {
+      padding: 14px;
+      border: 1px solid #b8ddf2;
+      border-radius: 8px;
+      background: var(--ice);
+    }
+
+    .support-item strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: #eef7fc;
+      color: var(--accent-dark);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+      color: var(--muted);
+      background: #ffffff;
+    }
+
+    @media (max-width: 780px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      .hero,
+      .card,
+      .wide-card {
+        padding: 22px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="page">
-    <div class="topbar">
-      <a class="brand-mini" href="index.html" aria-label="Blizzard Battleground home"><span class="logo-dot">❄️</span><span>Blizzard Battleground</span></a>
-      <nav aria-label="Site navigation">
-        <a href="index.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="support.html" aria-label="Frostillery support home">
+        <span class="mark" aria-hidden="true">F</span>
+        <span>Frostillery!</span>
+      </a>
+      <nav class="nav-links" aria-label="Legal and support pages">
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
       </nav>
     </div>
+  </header>
 
-    <section class="hero">
-      <p class="eyebrow">Official support page</p>
-      <h1>Blizzard Battleground</h1>
-      <p class="subtitle">Slide across the ice, fire snowballs, and battle your way through a frosty tank arena. This page provides help, purchase information, privacy choices, and legal resources for the App.</p>
-      <div class="button-row">
-        <a class="button" href="mailto:amielherrick.games@gmail.com">Contact Support</a>
-        <a class="button secondary" href="privacy.html">Privacy Policy</a>
-        <a class="button secondary" href="terms.html">Terms of Use</a>
-      </div>
-      <div class="pill-list" aria-label="Support topics">
-        <span class="pill">iOS app</span><span class="pill">In-app purchases</span><span class="pill">Rewarded ads</span><span class="pill">Privacy choices</span>
-      </div>
-    </section>
-
-    <section class="grid">
-      <article class="card half" id="contact">
-        <h2>Contact Support</h2>
-        <p>For help with gameplay, purchases, ads, technical problems, privacy questions, or legal notices, email:</p>
-        <p><strong><a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></strong></p>
-        <p class="fineprint">Please do not send payment card numbers, passwords, government identification numbers, or other sensitive information by email.</p>
-      </article>
-
-      <article class="card half" id="quick-help">
-        <h2>Before You Email</h2>
-        <p>Including the details below helps us troubleshoot faster:</p>
-        <ul>
-          <li>Your device model and iOS version.</li>
-          <li>The app version, if available.</li>
-          <li>A short description of what happened and when.</li>
-          <li>For purchase issues, the approximate purchase date and item purchased. Do not send full payment details.</li>
-        </ul>
-      </article>
-
-      <article class="card" id="purchases">
-        <h2>Purchases, Coins, Hearts, and Refunds</h2>
-        <p>In-app purchases are processed by Apple through the App Store. We do not receive or store your payment card details. Coins, hearts, retries, rewards, and other in-app items are digital game items only and have no cash value.</p>
-        <div class="notice warning">
-          <strong>Refunds:</strong> Refund requests for App Store purchases must be submitted through Apple. We cannot directly issue App Store refunds, but we can help troubleshoot missing items.
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Player Support</p>
+          <h1>Frostillery!</h1>
+          <p class="lede">Need help with a bug, purchase, ad issue, or gameplay question? Send a support request and include the details below so the issue can be reviewed quickly.</p>
         </div>
-        <p>If you bought coins and they did not appear, fully close and reopen the App. If they are still missing, contact support with the date of purchase and the item purchased.</p>
-      </article>
+        <a class="primary-action" href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Support%20Request">Email Support</a>
+        <p class="meta">Support email: <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></p>
+      </section>
 
-      <article class="card half" id="ads">
-        <h2>Ads and Rewarded Ads</h2>
-        <p>The App may show ads through Google AdMob. Some ads may be rewarded ads, such as watching an optional ad for a retry, heart, or similar in-game reward.</p>
-        <p>Rewarded ads are optional. Rewards are granted only after the ad provider confirms completion. Rewards may not be available if no ad is available, the ad is closed early, your connection fails, or the ad provider does not confirm completion.</p>
-      </article>
+      <section class="grid" aria-label="Support topics">
+        <article class="card">
+          <h2>What to Include</h2>
+          <p>When contacting support, please include:</p>
+          <ul>
+            <li>Your device model, such as iPhone 17 Pro Max or iPhone 15.</li>
+            <li>Your iOS version.</li>
+            <li>The Frostillery! app version, if visible in the app or App Store.</li>
+            <li>A short description of what happened and what you expected to happen.</li>
+            <li>The level, screen, cannon, tank skin, upgrade, or purchase involved.</li>
+            <li>Screenshots or screen recordings if they help explain the issue.</li>
+          </ul>
+        </article>
 
-      <article class="card half" id="privacy-choices">
-        <h2>Privacy and Consent Choices</h2>
-        <p>Review the <a href="privacy.html">Privacy Policy</a> for details about AdMob, Apple purchases, diagnostics, advertising identifiers, App Tracking Transparency, and privacy rights.</p>
-        <p>Depending on your region and device settings, the App may offer privacy or ad consent choices in the App. You can also manage Apple advertising and app tracking permissions in iOS Settings.</p>
-      </article>
+        <article class="card">
+          <h2>Purchase Help</h2>
+          <p>Frostillery! may offer optional in-app purchases, such as coin packs or virtual items. Purchases are processed by Apple through the App Store.</p>
+          <p>If a purchase does not appear, first restart the app and confirm the purchase in your Apple purchase history. If the issue continues, email support with the approximate purchase date, item purchased, and a screenshot of the Apple receipt.</p>
+          <p class="notice">Do not email credit card numbers, Apple ID passwords, or bank information.</p>
+        </article>
 
-      <article class="card" id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-          <summary>I bought coins but did not receive them.</summary>
-          <p>Coins should be delivered after Apple confirms the purchase. Fully close and reopen the App. If the coins are still missing, email support with the date of purchase and the item purchased.</p>
-        </details>
-        <details>
-          <summary>Can I transfer coins, hearts, or progress to another device?</summary>
-          <p>Progress and certain items may be stored locally on your device unless the App specifically offers cloud sync or restoration. Deleting the App, resetting your device, or switching devices may cause local progress or earned items to be lost.</p>
-        </details>
-        <details>
-          <summary>Can I redeem coins for money?</summary>
-          <p>No. Coins and other in-app items are for gameplay only. They have no cash value and cannot be sold, transferred, traded, redeemed, or exchanged for money.</p>
-        </details>
-        <details>
-          <summary>How do hearts work?</summary>
-          <p>Hearts are lives used during gameplay. Depending on the App version, hearts may refill over time, be earned through gameplay, be granted through optional rewarded ads, or be obtained with coins.</p>
-        </details>
-        <details>
-          <summary>How do I remove ads?</summary>
-          <p>If an ad-free purchase or subscription is offered in the App, the App will describe what it includes before purchase. If no ad-free option is shown, then an ad-free option is not currently available.</p>
-        </details>
-        <details>
-          <summary>Is the App for children?</summary>
-          <p>The App is not directed to children under 13. Parents and guardians should review the Privacy Policy and device settings for purchases, tracking, and ad personalization controls.</p>
-        </details>
-      </article>
+        <article class="card">
+          <h2>Ads</h2>
+          <p>Frostillery! may show ads, including interstitial ads between gameplay moments. Ads help support ongoing development and updates.</p>
+          <p>If an ad freezes, does not close, repeats too often, or appears in a confusing place, please email support with your device model, iOS version, app version, and what you were doing when the ad appeared.</p>
+        </article>
 
-      <article class="card half" id="legal">
-        <h2>Legal Terms</h2>
-        <p>Use of the App is governed by our <a href="terms.html">Terms of Use</a> and Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a>, unless a different license is provided through the App Store.</p>
-      </article>
+        <article class="card">
+          <h2>Gameplay and Progress</h2>
+          <p>If level progress, coins, upgrades, skins, or settings do not look correct, restart the app first. If the issue continues, send the level number, what changed, and any screenshots you have.</p>
+          <p>For best results, keep Frostillery! updated through the App Store so you receive bug fixes and balance updates.</p>
+        </article>
+      </section>
 
-      <article class="card half" id="copyright">
-        <h2>Copyright and Legal Notices</h2>
-        <p>If you believe content in the App or on this website infringes your rights, contact <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a> with enough detail for us to review the issue.</p>
-        <p class="fineprint">Include your contact information, a description of the work, the allegedly infringing material, and a statement that you believe the use is unauthorized.</p>
-      </article>
-    </section>
+      <section class="wide-card">
+        <h2>Common Questions</h2>
 
-    <footer>
-      <div class="links">
-        <a href="index.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
-      </div>
-      <div>© 2026 Amiel Herrick. Blizzard Battleground. All rights reserved.</div>
-      <div class="fineprint">This website provides support and legal information for the iOS app Blizzard Battleground.</div>
-    </footer>
+        <h3>The game crashed or froze. What should I do?</h3>
+        <ol>
+          <li>Close and reopen Frostillery!.</li>
+          <li>Check the App Store for an update.</li>
+          <li>Restart your device if the issue continues.</li>
+          <li>Email support if the same issue happens again.</li>
+        </ol>
+
+        <h3>Can I get a refund for an in-app purchase?</h3>
+        <p>Apple controls App Store payment processing and refund decisions. You can request a refund through Apple’s report-a-problem process or your Apple purchase history. Support can help troubleshoot delivery issues but cannot directly access your payment card or Apple account.</p>
+
+        <h3>Why am I seeing ads?</h3>
+        <p>Ads help keep Frostillery! available and support future updates. The game may show ads between levels or at other natural breaks in gameplay.</p>
+
+        <h3>How do I report a privacy question?</h3>
+        <p>Email <a href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Privacy%20Question">amielherrick.games@gmail.com</a> with the subject line <code>Frostillery Privacy Question</code>. You can also review the <a href="privacy.html">Privacy Policy</a>.</p>
+      </section>
+
+      <section class="wide-card">
+        <h2>Contact</h2>
+        <div class="support-list">
+          <div class="support-item">
+            <strong>General support</strong>
+            <a href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Support%20Request">amielherrick.games@gmail.com</a>
+          </div>
+          <div class="support-item">
+            <strong>Privacy questions</strong>
+            <a href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Privacy%20Question">amielherrick.games@gmail.com</a>
+          </div>
+          <div class="support-item">
+            <strong>Suggested subject line</strong>
+            <span><code>Frostillery Support Request</code></span>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Amiel Herrick. Frostillery! and related game content are owned by their respective rights holder.</p>
+    </div>
+  </footer>
 </body>
 </html>
