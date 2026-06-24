@@ -1,102 +1,2548 @@
+ChatGPT
+
+
+
+
+I have a privacy policy for an app I built. Put on your best online lawyer hat with experience in making privacy policies for apps for iOS and build me an iron clad privacy policy. It should also be an html file so I can upload to github. This is what I have. 
+
+← Support
+Privacy Policy
+Blizzard Battleground · Effective date: June 13, 2026
+
+This Privacy Policy describes how Blizzard Battleground (the “App”), developed by Amiel Herrick (“we,” “us,” or “our”), handles information when you use the App. By using the App, you agree to the practices described below.
+
+Information We Collect
+Blizzard Battleground does not ask you to create an account or provide personal information such as your name or email to play. However, the App uses third-party services that may automatically collect certain information, including:
+
+Advertising data: We use Google AdMob to display ads. AdMob may collect your device’s IP address (which may be used to estimate general location), advertising identifiers, device information, and data about your interactions with ads.
+Diagnostic and performance data: Crash logs, app performance data, and similar diagnostic information may be collected to maintain and improve the App. This data may also be used for advertising and analytics purposes.
+Purchase information: In-app purchases (coin packs) are processed entirely by Apple. We do not collect or store your payment details; Apple handles all payment processing.
+How Information Is Used
+Information collected through these services is used to display advertising, process in-app purchases, diagnose technical problems, and improve the App’s performance and features.
+
+Third-Party Services
+The App uses the following third-party services, each governed by its own privacy policy:
+
+Google AdMob — Google Privacy Policy and How Google uses information
+Apple App Store (in-app purchases) — Apple Privacy Policy
+Personalized Advertising and Your Choices
+Ads shown in the App may be personalized based on advertising identifiers. You can limit ad personalization through your device settings (for example, on iOS via Settings > Privacy & Security > Apple Advertising, and by managing app tracking permissions). You may also reset or limit your device’s advertising identifier at any time.
+
+Children’s Privacy
+The App is not directed to children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child has provided information through the App, please contact us so we can address it.
+
+Data Retention and Your Rights
+We do not directly store personal data. Data collected by third-party services is retained according to their respective policies. You may request information about, or deletion of, data associated with you by contacting us at the email below; where data is held by a third party, we will direct you to the appropriate process.
+
+Changes to This Policy
+We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.
+
+Contact Us
+If you have any questions about this Privacy Policy, contact us at:
+amielherrick.games@gmail.com
+
+© 2026 Amiel Herrick. Blizzard Battleground.
+
+I’ll turn your draft into a stronger app-store-ready policy, check current Apple/AdMob privacy requirements, and package it as a GitHub-ready HTML page.
+
+I found two key points to build around: Apple requires privacy practice disclosures in App Store Connect, including third-party SDK practices, and AdMob has specific disclosure/consent expectations for ads and certain regions.
+
+Thought for 1m 21s
+Done — I created a stronger GitHub-ready HTML privacy policy for your iOS app.
+
+Download the HTML privacy policy
+
+I strengthened it by adding clearer sections for AdMob, Apple in-app purchases, App Tracking Transparency, EEA/UK/Switzerland consent, California privacy rights, children’s privacy, data retention, security, third-party SDKs, and privacy request handling.
+
+A few important app-store notes:
+
+Apple requires you to disclose your app’s privacy practices in App Store Connect, including data collected by third-party SDKs you integrate, such as AdMob. 
+
+Google AdMob also expects publishers to comply with its advertising policies and, for users in the EEA, UK, and Switzerland, provide certain disclosures and obtain required consent for device storage/access and personalized ads. 
+
+One practical recommendation: after you upload this to GitHub Pages, use that URL both in App Store Connect and in AdMob’s app privacy policy URL field. Google notes that the privacy policy URL appears in some AdMob privacy messages. 
+
+
+
+
+index.html
+File
+here's the main page of the web page. Make it nicer to match the privacy policy. Also, Add anything you think should be added based on apple, admod, google requirements. Add anything you think may be legally required. Also add anything that is industry standard. 
+
+I’m going to keep this as a support/home page rather than turning it into another privacy policy, but I’ll add the legal and app-review pieces users expect: purchases, refunds, ads, privacy choices, Apple EULA, children/parents, and contact options.
+
+Thought for 1m 32s
+I updated your uploaded index.html support page into a polished support/legal landing page that matches the privacy policy style. 
+
+
+Files:
+
+Download the updated index.html
+Download matching privacy.html
+
+I added sections for:
+
+App support/contact
+
+Purchases, coins, missing purchases, and Apple refunds
+
+Ads and rewarded ads
+
+Privacy choices and third-party services
+
+Children/parent guidance
+
+FAQ
+
+Legal/license terms using Apple’s Standard EULA
+
+Fair play / anti-tampering language
+
+Availability/change disclaimer
+
+SEO metadata and basic structured data
+
+I based the added compliance items on Apple’s app privacy disclosure requirements, Apple’s privacy manifest/third-party SDK expectations, Google AdMob’s EEA/UK/Switzerland consent requirements, AdMob rewarded ad opt-in policy, Apple’s refund process, and Apple’s Standard EULA guidance. 
+
+For GitHub Pages, upload both files to the same folder and make sure the privacy policy is named exactly:
+
+privacy.html
+
+That way the support page’s Privacy Policy button works correctly.
+
+
+
+
+Anything else that should be added to protect myself as an independent developer from any sort of legal issues?
+
+I’ll give you a developer-protection checklist, separating what belongs on the website/app pages from what belongs in App Store Connect, your app flow, or your business setup.
+
+Thought for 5s
+Yes. What you have now is a strong support/privacy setup, but for self-protection as an independent developer, I would add a few more layers. Not all of these belong in the privacy policy itself; some belong in the app, App Store Connect, your GitHub page, or your developer operations.
+
+I’m not a lawyer, so treat this as a practical compliance checklist to discuss with an attorney if the app starts earning meaningful revenue.
+
+Highest-priority additions
+1. Add separate Terms of Use / Terms & Conditions
+A privacy policy explains data handling. It does not fully protect you from disputes about gameplay, coins, app availability, bugs, account/device loss, ad rewards, or misuse.
+
+You should add a terms.html page covering:
+
+License to use the app
+
+No ownership transfer of the app or game assets
+
+Virtual currency/coins have no cash value
+
+Coins, hearts, retries, levels, and rewards may change
+
+No guarantee of uninterrupted service
+
+App may contain bugs or balancing changes
+
+Prohibited conduct: hacking, reverse engineering, exploiting, cheating, tampering with ads, modifying app files
+
+Disclaimer of warranties
+
+Limitation of liability
+
+Indemnification
+
+Termination of access
+
+Governing law, likely California
+
+Reference to Apple’s Standard EULA
+
+Apple provides a Standard EULA by default unless you provide a custom license agreement, so you can either rely on Apple’s Standard EULA or create your own custom EULA in App Store Connect. Apple’s documentation says the Standard EULA applies if you do not provide a custom one. 
+
+My recommendation: add a simple Terms page that says your app is licensed under Apple’s Standard EULA, plus your own extra terms for coins, ads, rewards, prohibited behavior, and disclaimers.
+
+2. Add a Virtual Currency / In-App Purchase Terms section
+Because your game uses coins, you should be very clear that:
+
+Coins are digital items only.
+
+Coins have no real-world cash value.
+
+Coins cannot be redeemed, transferred, sold, traded, or exchanged.
+
+All purchases are final except where Apple or law allows otherwise.
+
+Refunds are handled by Apple, not you.
+
+You may modify coin pricing, rewards, store items, level costs, and availability.
+
+Apple handles App Store payment/refund workflows, but you should still disclose that purchases are processed by Apple and users must request refunds through Apple.
+
+This protects you from “I bought coins, so you owe me money/value forever” arguments.
+
+3. Add a Rewarded Ads Disclaimer
+For AdMob rewarded ads, say something like:
+
+Rewarded ads are optional. Rewards are granted after the ad provider confirms successful completion. Rewards may not be available if ads are unavailable, the connection fails, the ad is closed early, or the ad provider does not confirm completion.
+
+This protects you when a player watches part of an ad and says they did not receive a heart/free retry.
+
+Google’s AdMob policies treat rewarded ads as ads users choose to watch in exchange for an in-app reward, so your in-app language should make that clear. Google also requires disclosures/consent for certain ad data use in the EEA, UK, and Switzerland. 
+
+4. Add an in-app “Privacy Choices” or “Manage Consent” button
+This is especially important if AdMob is used.
+
+For EEA, UK, and Switzerland users, Google requires certain disclosures and consent for cookies/local storage where legally required and for personal data use for ad personalization. 
+ Google expanded this consent policy scope to Switzerland as of July 31, 2024. 
+
+Industry-standard approach:
+
+Use Google’s User Messaging Platform SDK.
+
+Show consent prompts where required.
+
+Add a permanent in-app button such as Settings > Privacy Choices.
+
+Let users reopen the consent form.
+
+Respect ATT choices on iOS.
+
+This is more than website language; it should be built into the app.
+
+5. Make sure your App Store Privacy Nutrition Label matches the actual SDK behavior
+Apple requires app privacy disclosures in App Store Connect, including data collected by third-party SDKs. Apple’s App Review Guidelines include privacy/legal requirements, and Apple separately maintains app privacy disclosure guidance. 
+
+For AdMob, you may need to disclose categories such as:
+
+Device ID / advertising identifier
+
+Product interaction
+
+Approximate location, if derived from IP
+
+Diagnostics
+
+Advertising data
+
+Usage data
+
+The exact choices depend on your implementation, including whether you use personalized ads, analytics, crash reporting, ATT, or any other SDKs.
+
+The biggest risk is inconsistency: privacy policy says one thing, App Store privacy label says another, SDK actually collects something else.
+
+Strongly recommended additions
+6. Add a “No Professional Advice / Entertainment Only” disclaimer
+For your game, this can be simple:
+
+The App is provided for entertainment purposes only.
+
+This matters more for apps involving finance, health, legal, kids, user-generated content, or safety, but it is still standard.
+
+7. Add a “Changes to Game Features” clause
+Mobile games evolve. You should reserve the right to change:
+
+Levels
+
+Coin rewards
+
+Prices
+
+Hearts/lives system
+
+Retry costs
+
+Ads
+
+Store items
+
+Difficulty
+
+Availability of features
+
+Suggested wording:
+
+We may update, modify, rebalance, suspend, or discontinue any part of the App, including levels, rewards, virtual items, pricing, advertisements, and gameplay features, at any time.
+
+This is important because players may complain if an update changes the value of coins or rewards.
+
+8. Add a “Device-Based Progress” warning
+Your current page says progress is saved on device. Make it stronger:
+
+If you delete the App, reset your device, switch devices, or lose access to your device, your progress, coins earned through gameplay, and local settings may be lost unless the App specifically offers a restore or sync feature.
+
+For purchased coin packs, you should be careful. Consumable in-app purchases usually are not restorable the same way non-consumables are. You should not promise restore unless your app actually supports it.
+
+9. Add a DMCA / Copyright Contact
+Since you are publishing a game and website, add:
+
+If you believe content in the App or on our website infringes your copyright, contact us at [email] with a description of the work, the allegedly infringing material, your contact information, and a statement that you have a good-faith belief the use is unauthorized.
+
+This is industry standard and gives people a clear complaint route before they escalate.
+
+10. Add an Intellectual Property section
+State that the app name, game design, graphics, UI, characters, code, logos, and related content belong to you or your licensors.
+
+This helps protect your assets and discourages copying.
+
+11. Add a “No User-Generated Content” statement, if true
+If Blizzard Battleground does not allow chat, uploads, custom names, user profiles, clans, public leaderboards, or shared content, say so.
+
+That helps distinguish your app from apps that need moderation/reporting/blocking systems. Apple’s 2026 App Review update specifically clarified some user-generated content issues, especially for random or anonymous chat. 
+
+Suggested language:
+
+The App does not currently allow users to post, upload, share, or transmit user-generated content to other users.
+
+If you later add usernames, leaderboards, chat, or shared maps, you will need more protections.
+
+Business protections outside the website
+12. Consider forming an LLC
+If you are publishing as an individual, legal claims can be more personal. An LLC can help separate business liability from personal assets, but only if you maintain it properly.
+
+For California, that usually means considering:
+
+LLC formation
+
+Separate bank account
+
+Separate email/domain
+
+Proper tax handling
+
+Annual/minimum taxes and filings
+
+Keeping personal and business money separate
+
+This is one of the bigger “protect myself” steps, but it has cost and tax implications.
+
+13. Use a dedicated developer/business email and domain
+You already have a dedicated Gmail, which is good. Even better:
+
+Buy a domain, such as blizzardbattleground.com or a developer studio domain.
+
+Use support@... and privacy@....
+
+Publish privacy, support, and terms pages there or through GitHub Pages with a custom domain.
+
+This looks more professional and reduces the chance your personal identity/email gets mixed into every support issue.
+
+14. Keep records
+Keep a folder with:
+
+App versions and release notes
+
+Privacy policy versions and dates
+
+Terms versions and dates
+
+AdMob settings screenshots
+
+App Store privacy label screenshots
+
+ATT prompt screenshots
+
+UMP/consent implementation notes
+
+SDK list and versions
+
+Support/refund conversations
+
+Asset licenses
+
+This protects you if Apple, Google, or a user questions what was disclosed at a certain time.
+
+What I would add next to your site
+I would create these three pages:
+
+index.html — Support page
+
+privacy.html — Privacy Policy
+
+terms.html — Terms of Use / Game Terms
+
+Then add links in the footer:
+
+Support · Privacy Policy · Terms of Use · Apple Standard EULA
+
+You are already close. The biggest missing legal protection is a Terms of Use page, especially because your app has ads, rewarded ads, coins, hearts, in-app purchases, and device-based progress.
+
+
+Please make all 3. 
+
+I’ll build a matched three-page set: support/home, privacy policy, and terms of use, all linked together and styled consistently for GitHub Pages/App Store use.
+
+Thought for 2m 4s
+Done — I created all 3 matching GitHub-ready HTML pages:
+
+Download index.html
+Download privacy.html
+Download terms.html
+
+I built these as a complete linked set based on your current support page and expanded it with stronger support, privacy, purchase, ad, virtual currency, and legal protection language. 
+
+
+The pages now include:
+
+Support/home page with FAQ, purchases, ads, privacy choices, refunds, copyright notices, and legal links.
+
+Privacy Policy covering AdMob, Apple purchases, diagnostics, ATT, EEA/UK/Switzerland consent, children’s privacy, privacy rights, retention, and security.
+
+Terms of Use covering Apple Standard EULA, coins, hearts, virtual items, refunds, rewarded ads, local progress loss, prohibited conduct, intellectual property, disclaimers, limitation of liability, indemnification, termination, and California governing law.
+
+I also made the pages consistent with Apple’s requirement that iOS apps provide a privacy policy URL and disclose privacy practices, including third-party SDK practices, in App Store Connect. 
+
+For AdMob, I included language around consent and ad personalization because Google’s EU user consent policy requires disclosures and consent for users in the EEA, UK, and Switzerland where applicable. 
+
+Upload all three files to the same GitHub Pages folder so the links work:
+
+index.html
+privacy.html
+terms.html
+
+
+
+
+What is a good book keeping software for ios for an independent game developer? What kinds of things should I look out for when doing my taxes, and what are some write offs I can use?
+
+I’ll treat this as general tax/bookkeeping education rather than personalized tax advice, and I’ll focus on a simple setup that works well for a small iOS game business in California.
+
+Thought for 9s
+For an independent iOS game developer, I’d keep bookkeeping simple at first: separate your money, track every app-related expense, save receipts, and use software that can export clean reports for a tax preparer.
+
+My top bookkeeping software picks
+Best overall: QuickBooks Online
+Use this if you want the safest long-term choice, especially if you may eventually hire a CPA, form an LLC, run ads, receive AdMob income, or have multiple revenue streams. QuickBooks has bank/credit-card connections, transaction categorization, reports, and a strong iPhone app. Intuit says QuickBooks can connect bank and credit card accounts and automatically match/categorize transactions. 
+
+Best for you if: you want the most accountant-friendly option.
+
+Best low-cost/simple option: Wave
+Wave is good if the game is still early and you want to keep costs down. It supports accounting, invoicing, payments, cash flow, income/expense tracking, and reporting. Wave’s iOS app is aimed at small business owners, freelancers, creators, consultants, and contractors, and includes expense tracking and invoicing. 
+
+Best for you if: you want a free or cheaper setup while the app is not yet making much money.
+
+Best mobile-first alternative: Zoho Books
+Zoho Books is solid if you like clean mobile tools and may use other Zoho apps later. Zoho says its mobile app supports estimates, invoices, bills, expense tracking, bank feeds, and transaction matching. 
+
+Best for you if: you want a less expensive QuickBooks alternative with strong iPhone support.
+
+Best if you invoice clients too: FreshBooks
+FreshBooks is more useful if you also do freelance game design, app development, art, or training work. It is strong for invoicing, receipt capture, time tracking, and expense tracking from iOS. 
+
+Best for you if: you expect client work in addition to App Store income.
+
+My practical recommendation
+For Blizzard Battleground, I’d start with either:
+
+Wave if you want to keep costs low until the app earns steady revenue.
+
+QuickBooks Online if you want the most professional setup from day one.
+
+Since you are likely dealing with Apple Developer fees, AdMob income, in-app purchases, software subscriptions, graphics tools, devices, and possibly advertising expenses, QuickBooks is probably the cleaner long-term option. But Wave is completely reasonable if this is still a small side business.
+
+What to look for in bookkeeping software
+The main things I would care about are:
+
+Feature	Why it matters
+Bank and credit card sync	Keeps you from manually entering every purchase.
+Receipt scanning	Important for Apple fees, software, assets, ads, subscriptions, equipment, and supplies.
+Schedule C categories	Helpful if you are filing as a sole proprietor.
+Profit and loss report	Shows whether the app is actually profitable.
+Tax-ready exports	Your CPA or tax software will need clean summaries.
+Mileage tracking	Useful if you drive for business errands, meetings, banking, conferences, or developer events.
+Separate business/personal categories	Prevents messy records.
+CPA/accountant access	Helpful when tax time comes.
+The biggest mistake is mixing personal and business expenses. Even before forming an LLC, I would use a separate checking account and separate credit card just for the app.
+
+Tax things to watch out for
+1. App income is taxable
+Income from Apple App Store payouts, Google AdMob, sponsorships, or any other app-related revenue generally needs to be reported. Depending on how you are set up, this may go on Schedule C as self-employment/business income.
+
+You need to report all business income, even if you do not receive a 1099.
+
+2. You may owe self-employment tax
+If the app is treated as a sole proprietorship business, net profit may be subject to both income tax and self-employment tax. This is separate from regular income tax.
+
+3. You may need estimated tax payments
+If the app starts making meaningful money, you may need quarterly estimated tax payments. This matters especially because Apple/Google generally do not withhold taxes for you like an employer does.
+
+4. Keep business and hobby rules in mind
+If you deduct expenses year after year but have little or no income, the IRS may question whether it is a real business or a hobby. To look like a real business, keep records showing a profit motive:
+
+App Store listing
+
+Developer account
+
+AdMob account
+
+Business plan or revenue strategy
+
+Marketing expenses
+
+Version updates
+
+Support website
+
+Privacy policy and terms
+
+Revenue tracking
+
+Separate bookkeeping
+
+5. California LLC costs can be high
+If you form a California LLC, California generally requires an $800 annual tax for LLCs organized or doing business in California, even if the LLC is not actively making money. 
+
+That does not mean you should avoid an LLC, but you should not form one casually without understanding the cost. For a small game that is not earning much yet, a sole proprietorship may be simpler at first. Talk to a tax professional before forming the LLC.
+
+Possible write-offs for an independent iOS game developer
+The general IRS rule is that business expenses need to be ordinary and necessary for your trade or business. The IRS business expense resource page points taxpayers to current guidance for deducting business expenses, and the old Publication 535 was discontinued after 2022. 
+
+Common write-offs for your situation may include:
+
+Expense	Notes
+Apple Developer Program fee	Usually a direct business expense.
+App Store-related fees	Anything directly required to publish or maintain the app.
+AdMob-related tools	Reporting, mediation, consent tools, testing services, if paid.
+MacBook/Mac mini/iPad/iPhone used for development	May be deductible or depreciated depending on cost and business use.
+Xcode-related development tools	Xcode is free, but related paid tools may count.
+Software subscriptions	Canva, Adobe, GitHub, domain hosting, cloud storage, asset tools, AI coding tools, etc.
+Game assets	Sprites, icons, music, sound effects, fonts, UI packs, stock art, licenses.
+Website/domain/hosting	GitHub Pages custom domain, domain privacy, SSL, support site costs.
+Advertising/marketing	Apple Search Ads, social media ads, promotional videos, trailers, website graphics.
+Contract labor	Artists, developers, testers, voice actors, music creators. Watch 1099 requirements.
+Professional services	CPA, attorney, tax preparer, trademark search, privacy policy review.
+Education/training	Courses, books, tutorials directly related to app development/business.
+Office supplies	Notebooks, storage drives, cables, chargers, desk items used for development.
+Internet/phone portion	Only the business-use percentage, not the whole bill unless exclusively business.
+Home office	Only if you have a qualifying space used regularly and exclusively for business.
+Mileage/parking	Business trips, meetings, bank visits, conferences, supply runs. Not normal commuting.
+App testing devices	iPhones/iPads used to test the game. Track personal vs. business use.
+Home office deduction
+Be careful here. The IRS simplified home office option is currently $5 per square foot, up to 300 square feet, for a maximum simplified deduction of $1,500. 
+
+But the space generally must be used regularly and exclusively for business. A desk in a shared family room usually does not qualify if it is also used personally.
+
+Equipment: deduct or depreciate?
+For bigger purchases like a MacBook, Mac mini, iPhone, iPad, monitor, desk, or chair, you may not always deduct 100% immediately. Depending on the item, amount, and business use percentage, it may need to be depreciated or expensed under applicable rules.
+
+Example: If you buy a $1,500 MacBook and use it 70% for game development and 30% personally, only the business portion should be considered.
+
+Keep a simple note like:
+
+MacBook Air purchased for iOS app development, Xcode testing, App Store uploads, GitHub support site, art editing, and bookkeeping. Estimated business use: 70%.
+Things that are risky or easy to overdo
+Be careful with:
+
+Writing off 100% of your phone if you also use it personally.
+
+Writing off your whole internet bill.
+
+Claiming a home office that is not exclusive.
+
+Deducting video games unless they are directly for market research and documented.
+
+Deducting meals without a clear business purpose.
+
+Deducting family trips as “business research.”
+
+Claiming large losses with no revenue plan.
+
+Mixing personal Apple purchases with business app purchases.
+
+Not reporting AdMob or App Store income because it was “small.”
+
+Recordkeeping system I would use
+Create a dedicated folder structure:
+
+Blizzard Battleground Business
+├── 2026 Income
+│   ├── Apple App Store payouts
+│   └── Google AdMob payouts
+├── 2026 Expenses
+│   ├── Apple Developer
+│   ├── Software Subscriptions
+│   ├── Assets and Art
+│   ├── Advertising
+│   ├── Equipment
+│   ├── Professional Services
+│   └── Website and Hosting
+├── Tax Forms
+├── App Store Connect Reports
+├── AdMob Reports
+└── Legal
+    ├── Privacy Policy
+    ├── Terms of Use
+    └── Asset Licenses
+Then use bookkeeping categories like:
+
+Category	Examples
+Income - App Store	Apple payouts
+Income - Ads	AdMob payouts
+Advertising & Marketing	App Store ads, promo graphics
+Software & Subscriptions	Adobe, Canva, GitHub, AI tools
+Dues & Fees	Apple Developer Program
+Contract Labor	Artist, developer, music, testing
+Legal & Professional	CPA, attorney, trademark help
+Office Expense	Cables, storage, desk supplies
+Equipment	Mac, iPhone, iPad, monitor
+Website	Domain, hosting, GitHub-related costs
+Education	Courses, books, tutorials
+My suggested setup for you
+For now:
+
+Open a separate checking account for the game.
+
+Use a separate credit card for app expenses.
+
+Start with Wave or QuickBooks.
+
+Save every receipt digitally.
+
+Export monthly Apple and AdMob reports.
+
+Track your development equipment and business-use percentage.
+
+Talk to a CPA before forming an LLC because California’s $800 LLC tax can make it expensive before the app earns money. 
+
+For software, my pick would be:
+
+Wave while revenue is low.
+QuickBooks Online once the game has consistent income or you want CPA-ready books.
+
+
+My wife owns a second home that is currently vacant. Can I sign a lease with her to use it as a game development studio?
+
+I’ll answer this as a tax/legal risk question, because the issue is less “can you sign a lease?” and more whether the IRS/California would respect it as a real business expense between spouses.
+
+Thought for a few seconds
+Yes, you can sign a lease with your wife to use her vacant second home as a game development studio, but I would be very careful before doing it. The lease needs to be real, business-purpose-driven, at fair market rent, and properly reported. Otherwise, the IRS or California FTB could view it as a disguised personal/family transfer rather than a legitimate business deduction.
+
+The basic IRS rule is that rent can be deductible when it is paid for property used in your business, but the expense must be legitimate and tied to actual business use. The IRS also says rental income received for the use of real estate is taxable to the person receiving it. 
+
+The cleanest answer
+If you are serious about using it as a dedicated studio, this could work.
+
+But I would only do it if:
+
+You actually use the property regularly for game development.
+
+The rent is close to fair market value.
+
+You have a written lease.
+
+You pay rent from a separate business account.
+
+Your wife reports the rental income.
+
+You keep records proving business use.
+
+The property is not also being used casually as a family/personal space.
+
+You discuss it with a CPA before claiming the deduction.
+
+The biggest issue: spouse-to-spouse related-party scrutiny
+Because this is your wife’s property, the IRS may scrutinize whether the rent is a real business expense. Related-party transactions are not automatically illegal, but they need to look like transactions between unrelated people.
+
+That means the lease should have normal business terms:
+
+Item	What to do
+Rent amount	Use fair market rent for a comparable office/studio or small residential rental in that area.
+Payment method	Pay by check, ACH, or business account transfer. Avoid cash.
+Lease terms	Have a written lease with start date, rent amount, due date, security deposit if applicable, use restrictions, utilities, maintenance, and termination terms.
+Business purpose	State that the premises are used as a game development studio/office.
+Documentation	Keep screenshots of comparable rental listings to prove the rate is reasonable.
+Actual use	Keep a work log, calendar, photos of the studio setup, and receipts for business equipment there.
+Your wife would likely need to report the rent
+If your wife receives rent, that is generally rental income. California FTB says rental income includes money received for the occupancy or use of real estate, and you must pay tax on any rental profit. California also treats rental income/losses as passive activity. 
+
+So this is not just a deduction for you. It creates income and tax reporting for her.
+
+That may reduce or eliminate the benefit. For example:
+
+You deduct: $1,500/month business rent
+Your wife reports: $1,500/month rental income
+If you file jointly, the household-level tax benefit may be limited because the deduction and income may partially offset each other. There could still be differences depending on self-employment tax, depreciation, expenses, passive activity rules, and your business structure, but this is CPA territory.
+
+Be careful if you file jointly
+If you and your wife file a joint tax return, paying rent to your spouse may not create the clean tax benefit you imagine. On paper, your business deducts rent, but your wife reports rental income. The net family benefit may be small, and the audit risk may be higher if it looks artificial.
+
+This is different from renting from an unrelated landlord, where the money actually leaves your household.
+
+Better alternatives to compare
+Option 1: Use your own home office deduction
+If you have a qualifying space in your own home that is used regularly and exclusively for your game business, the home office deduction may be simpler. The IRS says deductible business-use-of-home expenses may include the business portion of rent, mortgage interest, real estate taxes, utilities, insurance, depreciation, maintenance, and repairs. 
+
+The simplified method is also available: $5 per square foot, up to 300 square feet, for a maximum of $1,500. The IRS explains that simplified option on its home office deduction page. 
+
+Option 2: Rent only one room or a defined studio area
+Instead of leasing the whole second home, you could lease a clearly defined studio room or portion of the property. That may be easier to justify if your game business is small.
+
+Example:
+
+“Tenant leases the front office room, approximately 180 square feet, plus reasonable access to the restroom, entryway, and utilities, for use as a game development office/studio.”
+
+This can look more reasonable than a new game business renting an entire vacant house.
+
+Option 3: Wait until the app has revenue
+If the app is not earning much yet, large rent deductions could make the business look like it is generating losses mainly to offset other income. That can raise hobby-loss or business-purpose concerns.
+
+What I would not do
+I would not sign a lease just to create a write-off.
+
+I would not charge above-market rent.
+
+I would not “pay rent” informally without actual transfers.
+
+I would not lease the entire house if you only use a desk in one room.
+
+I would not let family use the property personally while also claiming it as a dedicated studio.
+
+I would not deduct rent unless your wife is reporting the rental income.
+
+Best structure if you do it
+Use a simple written lease with language like:
+
+The premises will be used exclusively for lawful business purposes related to software development, mobile game development, app testing, digital asset creation, administrative work, bookkeeping, marketing, and related business activities.
+
+Also keep:
+
+Lease agreement
+
+Monthly payment proof
+
+Comparable rental listings
+
+Studio photos
+
+Business-use calendar
+
+Utility allocation
+
+App development logs
+
+Receipts for equipment/software used there
+
+Wife’s rental income/expense records
+
+My practical recommendation
+For now, I would probably not lease the entire vacant second home unless your game business is already generating meaningful revenue or you truly need a separate full-time studio.
+
+The safer approach would be:
+
+Start with a home office deduction at your main home, if you qualify; or
+
+Lease a specific room/office area in your wife’s second home at fair market value; and
+
+Have a CPA review it before you claim the deduction.
+
+The idea is legally possible, but because it is a spouse-owned property, it needs to be handled like a real third-party business arrangement, not a paper write-off.
+
+
+The plan would be to actually rent below market price, the utilities would be the business expense and then based on the rental income, my wife would be able to use the money to repair the house and count that as a deduction on her rental income. 
+
+Thought for 9s
+That plan is understandable, but it has a few big red flags. The weakest part is the below-market rent. The IRS may treat below-market rent to a family member/spouse as not rented for profit or as personal/family use, which can limit or eliminate the rental-expense deductions your wife is hoping to use. IRS rental guidance says if a property is not rented for profit, rental expenses cannot be deducted beyond the applicable limits, and IRS rental rules also limit deductions where there is personal use. 
+
+The safer framing is:
+
+Do not structure this mainly as “create rent income so repairs become deductible.” Structure it only if there is a real business need for a separate studio and the arrangement would make sense between unrelated parties.
+
+The problem with below-market rent
+Charging below market rent sounds friendly and reasonable within a family, but for tax purposes it hurts the argument that this is a true rental business.
+
+For the IRS to respect the arrangement, you want it to look like a normal landlord/tenant relationship:
+
+Issue	Safer approach
+Rent amount	Use fair market rent, or very close to it.
+Lease	Written lease with normal terms.
+Payments	Paid monthly from your business account.
+Use	Actual, documented business use.
+Repairs	Ordinary repairs only deducted as allowed; improvements capitalized.
+Reporting	Wife reports rental income properly.
+Personal use	Avoid family/personal use of the space.
+If you intentionally rent below market to a spouse and then use that to generate deductions, that is exactly the type of arrangement a tax preparer may be uncomfortable defending.
+
+Utilities as a business expense
+Utilities can potentially be a business expense if your business is truly using the property and the expenses are ordinary, necessary, and properly allocated. But you need to be careful.
+
+A cleaner setup would be one of these:
+
+Option A: Your business pays utilities directly
+Your game business pays the electric/internet bills for the studio. You deduct the business-use portion.
+
+Option B: Your wife pays utilities and includes them in rent
+Your wife pays utilities as landlord, charges a rent amount that reflects that, reports the rent income, and deducts allowable rental expenses.
+
+Option C: Split utilities by actual use
+If only part of the house is used as the studio, only the business/rental portion should be considered.
+
+What I would not do is claim the whole house’s utilities as a business expense if you only use one room or use the space occasionally.
+
+Repairs are not automatically deductible
+Your wife cannot simply use rent money to repair the house and automatically deduct everything in the same year.
+
+There is a major difference between repairs and improvements:
+
+Type	Example	Tax treatment
+Repair	Fixing a broken outlet, patching a leak, repairing a toilet	Often currently deductible if related to the rental/business use
+Improvement	New roof, full remodel, new HVAC, major flooring replacement, adding value or extending useful life	Usually capitalized and depreciated over time
+IRS Publication 527 specifically tells rental property owners to separate repair costs from improvement costs and keep accurate records; it also discusses safe harbors such as routine maintenance and de minimis rules. 
+ The IRS tangible property regulations apply to individuals filing Schedule C, E, or F when they acquire, produce, or improve tangible property. 
+
+So if the vacant house needs major work, a CPA may say some or most of that is not an immediate deduction.
+
+The joint return issue
+If you and your wife file jointly, the strategy may not help as much as it seems.
+
+Example:
+
+Your game business deducts rent:       -$1,000
+Your wife reports rental income:       +$1,000
+Household income effect before expenses: $0
+Then your wife may deduct valid rental expenses, but those deductions may be limited depending on whether the rental is respected, whether it is for profit, whether it is passive, whether it is below-market, and whether the costs are repairs or improvements.
+
+The possible benefit is not impossible, but it is not as simple as “I deduct rent, she deducts repairs.”
+
+The biggest audit-risk sentence
+The part that concerns me most is this:
+
+“Based on the rental income, my wife would be able to use the money to repair the house and count that as a deduction on her rental income.”
+
+That sounds like the tax purpose is driving the arrangement. A safer tax position would be:
+
+“I need a dedicated studio for app development. My wife owns a vacant property. We will rent a defined portion at a reasonable rate, document the lease, use it exclusively for business, and each report the income/expenses correctly.”
+
+The business purpose should come first. The tax result should be secondary.
+
+Safer version of your plan
+If you want to move forward, I would make it more conservative:
+
+Lease only a specific room or defined area, not the entire house, unless you truly use the entire house for the business.
+
+Charge fair market rent for that room/space, not below market.
+
+Take photos of the studio setup.
+
+Use a written lease.
+
+Pay from a separate business account.
+
+Do not use the house for family storage, guests, weekends, or personal projects.
+
+Have your wife report the rental income.
+
+Have a CPA classify repairs vs. improvements before filing.
+
+Keep comparable rent listings showing how you determined rent.
+
+Track your workdays/hours at the studio.
+
+My honest recommendation
+I would not do the below-market-rent version.
+
+The safer options are:
+
+Best tax-safe option
+Use a qualifying home office deduction at your main home if you have a dedicated space.
+
+Next safest
+Rent a specific room/office area from your wife at fair market value with a written lease.
+
+Riskiest
+Rent the entire vacant second home below market, deduct utilities through the business, and have your wife deduct repairs against that rental income.
+
+That last version could work only with very careful CPA guidance, but it has enough related-party and below-market-rent issues that I would not rely on it without professional review.
+
+
+Ok, so I think fair market rent would be 2k per month. Would it help if the house was in a trust?
+
+I’ll stay in the same practical lane: whether the trust changes the tax/legal analysis, and what documentation would make a $2,000/month studio lease easier to defend.
+
+Thought for a few seconds
+Usually, no — putting the house in a trust does not magically make the lease safer. It might help with estate planning or ownership formalities, but it generally does not solve the core tax issues: related-party rent, fair market value, real business use, rental-income reporting, repairs vs. improvements, and whether the arrangement has economic substance.
+
+If it is a revocable living trust where your wife is the grantor/owner, the IRS generally treats a grantor trust as disregarded for income tax purposes, meaning the grantor is treated as the owner and the income is taxed to the grantor. 
+ In plain English: for tax purposes, it may still look like you are renting from your wife.
+
+If fair market rent is $2,000/month
+That is better than below-market rent. A fair-market lease is much easier to defend than a discounted family arrangement.
+
+But I would document the $2,000 carefully:
+
+What to document	Why
+Comparable rentals	Shows $2,000 is not made up.
+Zillow/Redfin/Rentometer listings	Supports fair market value.
+Lease agreement	Shows this is a real landlord/tenant relationship.
+Business payment records	Shows actual rent was paid.
+Studio photos	Shows actual business use.
+Work calendar/log	Shows regular use.
+Utility bills	Supports business/rental expense allocation.
+No personal use	Helps avoid personal-use classification.
+IRS guidance says rental income includes cash or fair market value received for use of real estate, and rental expenses can generally be deducted from rental income. 
+ IRS Publication 527 also covers special rental situations, including property changed to rental use, renting part of a property, and not-for-profit rental activity. 
+
+Trust or no trust, the IRS will care more about substance
+The key question is not:
+
+“Is the house in a trust?”
+
+The key question is:
+
+“Is this a real business rental arrangement that would make sense between unrelated parties?”
+
+A trust may actually make things more complicated if:
+
+The trust needs a separate tax return.
+
+The trust is irrevocable.
+
+The trustee is not your wife.
+
+The trust document limits leasing.
+
+The trust has multiple beneficiaries.
+
+Rent must be paid to the trust instead of your wife.
+
+Repairs/improvements are paid by the wrong person/entity.
+
+If it is an irrevocable or non-grantor trust, the tax treatment can become much more complicated and may involve Form 1041/K-1 reporting. That is firmly CPA/estate-attorney territory.
+
+Repairs still need caution
+Even with fair market rent, your wife cannot automatically deduct all house repairs just because she receives rent. IRS rental guidance says rental expenses may include items like maintenance, utilities, insurance, taxes, and depreciation, but repairs and improvements must be handled correctly. 
+ IRS Publication 527 discusses depreciation, property changed to rental use, and rental deductions. 
+
+The big distinction remains:
+
+Cost	Likely treatment
+Fixing a broken outlet	Potential repair
+Replacing a broken window	Potential repair
+Patching drywall	Potential repair
+New roof	Usually improvement
+Full flooring replacement	Often improvement
+Kitchen/bath remodel	Usually improvement
+New HVAC	Usually improvement
+Major renovations before renting	Often capitalized, not immediately deducted
+If the house is currently vacant and needs repairs before it can be rented/used, some costs may be startup/pre-rental costs or capital improvements rather than immediate rental deductions.
+
+Would I put the house in a trust just for this?
+No. I would not transfer the house into a trust just to make this lease arrangement look better.
+
+A trust may be useful for estate planning, probate avoidance, asset management, or beneficiary planning. But as a tax strategy for leasing a studio to your own business, it does not really solve the main issue.
+
+The safer version
+The strongest version would be:
+
+Your wife keeps ownership as-is, or the trust stays as-is if it already exists for estate planning.
+
+You lease the property or a defined portion at fair market rent.
+
+The lease states it is for software/mobile game development and related business activity.
+
+You pay $2,000/month from a separate business account.
+
+Your wife reports the rental income.
+
+She deducts only legitimate rental expenses.
+
+Improvements are capitalized/depreciated where required.
+
+You avoid personal/family use of the property.
+
+A CPA reviews the structure before tax filing.
+
+My practical take
+Fair market rent helps a lot. A trust probably does not help much unless there are broader estate-planning reasons.
+
+The cleanest tax position is not “the house is in a trust.” It is:
+
+“This is a real studio lease, at fair market rent, with actual business use, normal lease terms, clean payment records, and proper reporting by both sides.”
+
+Before signing anything, I would ask a CPA one very specific question:
+
+“If I lease my spouse’s vacant second home at $2,000/month for my Schedule C game-development business, and she reports the rental income on Schedule E, will you be comfortable preparing and defending that position?”
+
+
+what does the pay structure look like for AdMob
+
+I’ll cover both meanings: how AdMob calculates ad revenue and how/when Google pays you out.
+
+Thought for 4s
+AdMob pays you as the app publisher for ads shown inside your app. The amount depends on the ad format, country, advertiser demand, user behavior, fill rate, and whether ads are personalized.
+
+Simple version
+You place AdMob ad units in your app. Advertisers bid to show ads. Google serves the ad. You earn revenue when users view, click, or complete certain ads depending on the ad type. Google tracks the earnings in your AdMob account and pays you after you meet the payment threshold.
+
+For U.S. AdMob accounts, the standard payment threshold is generally $100. If your balance does not reach the threshold in a month, it rolls over until you do. Google says when your balance exceeds the payment threshold, payment is issued at the end of the following month. 
+
+Common AdMob pay terms
+Term	Meaning
+Impression	An ad was shown.
+Click	A user tapped the ad.
+Rewarded completion	User completed a rewarded ad and qualified for the in-game reward.
+eCPM	Estimated earnings per 1,000 ad impressions.
+Fill rate	Percentage of ad requests that actually receive an ad.
+Match rate	How often AdMob finds an eligible ad for your request.
+Show rate	How often a loaded ad is actually shown.
+Estimated earnings	Your running estimated revenue before final adjustments.
+Finalized earnings	Revenue finalized after Google checks for invalid activity, adjustments, etc.
+The main metric you’ll watch is eCPM, which means roughly: “How much am I earning for every 1,000 ad impressions?” AppsFlyer defines eCPM as revenue earned by a publisher for every 1,000 ad impressions. 
+
+Basic formula
+Estimated Revenue = (Ad Impressions / 1,000) × eCPM
+Example:
+
+10,000 rewarded ad impressions × $8 eCPM ÷ 1,000 = $80
+So if your rewarded ads average an $8 eCPM and you show 10,000 rewarded ads, you might earn around $80 before any adjustments.
+
+Ad types and how they usually pay
+For your tank game, these are the likely ad formats:
+
+Ad type	How it works	Typical use in your game	Revenue potential
+Banner ads	Small persistent ad	Bottom/top of menu screen	Lowest
+Interstitial ads	Full-screen ad between screens	Between levels, after losing, after a few rounds	Medium
+Rewarded ads	User chooses to watch for reward	Free retry, extra heart, coin bonus	Usually highest
+App open ads	Ad shown when app opens/resumes	Opening app	Medium, but can annoy users
+Native ads	Ad styled into UI	Store/menu/news screen	Varies
+For Blizzard Battleground, I would focus on:
+
+Rewarded ads for “Free Retry,” hearts, or bonus coins.
+
+Interstitial ads after every few levels, not after every single action.
+
+Maybe banner ads only on non-gameplay screens.
+
+I would avoid banner ads during active gameplay because they can make the game feel cheap and can cause accidental taps.
+
+When do you get paid?
+AdMob payments generally work like this:
+
+You earn ad revenue during the month.
+
+Google finalizes earnings after the month ends.
+
+If your finalized balance reaches the payment threshold, payment is issued near the end of the following month.
+
+If you do not reach the threshold, the balance rolls over.
+
+Example:
+
+Month	Earnings	What happens
+June	$40	Below $100, rolls over
+July	$75	Total is $115
+August	—	Google issues payment for June + July near end of August
+Google’s AdMob payment threshold page lists $100 as the U.S. dollar payment threshold, with lower thresholds for tax/payment verification steps. 
+
+What affects how much you make?
+The biggest factors are:
+
+1. User country
+U.S., Canada, UK, Australia, and Western Europe usually pay more than many other regions.
+
+A rewarded ad watched by a U.S. user may be worth far more than the same ad watched in a lower-demand ad market.
+
+2. Ad format
+Rewarded ads usually pay more because the user chooses to watch and engagement is higher. Interstitials are usually next. Banners are usually lowest.
+
+3. Game retention
+Revenue depends less on downloads and more on how often people come back.
+
+A game with 1,000 daily users who play repeatedly can make more than a game with 20,000 downloads but poor retention.
+
+4. Ad placement
+Bad placement hurts revenue and can trigger policy problems. Don’t place ads where users accidentally tap them or where ads interrupt core gameplay too aggressively.
+
+5. ATT consent and personalization
+On iOS, if users do not allow tracking, personalized ad performance may be lower. You still can show ads, but ad revenue may be lower depending on the market and ad demand.
+
+6. Invalid traffic
+Repeated self-clicking, asking people to click ads, accidental click traps, or suspicious traffic can cause revenue clawbacks, ad serving limits, or account suspension.
+
+Example for your game
+Let’s say your game has:
+
+1,000 daily active users
+Average 5 rounds per user per day
+Interstitial every 3 rounds
+Rewarded ad used by 20% of users once per day
+Estimated daily ad volume:
+
+Interstitials:
+1,000 users × 5 rounds ÷ 3 = about 1,666 interstitial impressions/day
+
+Rewarded:
+1,000 users × 20% = 200 rewarded impressions/day
+Hypothetical revenue:
+
+Ad type	Impressions/day	Example eCPM	Daily revenue
+Interstitial	1,666	$3.00	~$5.00
+Rewarded	200	$8.00	~$1.60
+Total	—	—	~$6.60/day
+That would be roughly:
+
+$6.60/day × 30 = $198/month
+This is only an example. Real results can be much lower or much higher.
+
+Better game monetization setup
+For your frozen tank game, I’d structure it like this:
+
+Moment	Ad type	Notes
+Player loses	Rewarded ad	“Watch ad for Free Retry”
+Out of hearts	Rewarded ad	“Watch ad for +1 heart”
+Level complete	Interstitial	Only every 2–4 levels
+Store screen	Optional banner/native	Do not clutter
+Gameplay	No ad	Keep gameplay clean
+Rewarded ads are usually the best fit because they feel fair: the player chooses the ad in exchange for something useful.
+
+Important AdMob payment warnings
+Do not:
+
+Click your own ads.
+
+Ask friends/family to click ads.
+
+Incentivize clicks.
+
+Put ads too close to gameplay buttons.
+
+Show interstitials unexpectedly while the player is tapping.
+
+Use misleading “continue” buttons that trigger ads.
+
+Refresh ads excessively.
+
+Use test ads incorrectly during development.
+
+Use Google’s test ad units while developing. Only switch to live ad units when you are ready to publish.
+
+Bottom line
+AdMob does not pay a fixed amount per download. It pays based on ad performance.
+
+The simple model is:
+
+More active users × more valid ad impressions × higher eCPM = more revenue
+For your game, the most realistic money will likely come from:
+
+Rewarded ads for retries/hearts/coins
+
+Interstitial ads between level attempts
+
+In-app purchases for coins or ad removal
+
+Once you launch, the numbers to watch inside AdMob are eCPM, impressions, match rate, show rate, estimated earnings, and invalid traffic adjustments.
+
+
+Estimate for 10000 daily users who play 12 levels a day. 
+
+I’ll estimate this with a few monetization scenarios, because the answer depends heavily on how often you show interstitials and how many users choose rewarded ads.
+
+Thought for 6s
+For 10,000 daily users playing 12 levels per day, you’d have about 120,000 level plays per day.
+
+The revenue depends on your ad frequency and eCPM. Here’s a realistic estimate.
+
+Assumptions
+For a casual iOS game:
+
+Ad type	Conservative eCPM	Moderate eCPM	Strong eCPM
+Interstitial ads	$2	$4	$7
+Rewarded ads	$6	$10	$18
+For your game, I’d assume:
+
+Interstitial ad every 3–5 levels
+
+Rewarded ads used by 15%–35% of users daily
+
+Rewarded ads used for Free Retry, extra heart, or bonus coins
+
+Scenario 1: Conservative
+Interstitial every 5 levels = about 24,000 interstitial impressions/day.
+Rewarded ads: 15% of users watch 1 per day = 1,500 rewarded impressions/day
+
+Source	Math	Daily
+Interstitials	24,000 ÷ 1,000 × $2	$48
+Rewarded ads	1,500 ÷ 1,000 × $6	$9
+Total		$57/day
+Estimated monthly revenue:
+
+$57/day × 30 = $1,710/month
+Scenario 2: Moderate / realistic
+Interstitial every 4 levels = about 30,000 interstitial impressions/day.
+Rewarded ads: 25% of users watch 1 per day = 2,500 rewarded impressions/day
+
+Source	Math	Daily
+Interstitials	30,000 ÷ 1,000 × $4	$120
+Rewarded ads	2,500 ÷ 1,000 × $10	$25
+Total		$145/day
+Estimated monthly revenue:
+
+$145/day × 30 = $4,350/month
+Scenario 3: Strong performance
+Interstitial every 3 levels = about 40,000 interstitial impressions/day.
+Rewarded ads: 35% of users watch 1.5 per day = 5,250 rewarded impressions/day
+
+Source	Math	Daily
+Interstitials	40,000 ÷ 1,000 × $7	$280
+Rewarded ads	5,250 ÷ 1,000 × $18	$94.50
+Total		$374.50/day
+Estimated monthly revenue:
+
+$374.50/day × 30 = $11,235/month
+
+I play interstitial ad every 3 levels. 
+
+I have interstitial ads every 3 levels. I also have in-app purchases. I know that IAPs are hard to figure but with an average game like mine, what could we be talking as a total monthly payout from all sources?
+
+Thought for 32s
+With 10,000 daily users playing 12 levels per day, and an interstitial ad every 3 levels, you are potentially showing:
+
+10,000 users × 12 levels = 120,000 level plays/day
+120,000 ÷ 3 = 40,000 interstitial ad opportunities/day
+So your ad revenue is mostly driven by this:
+
+40,000 ad impressions/day × interstitial eCPM
+AdMob uses thresholds before payment; for U.S. AdMob accounts, the common payment threshold is $100, and if you do not meet the threshold, the balance rolls over. 
+
+Estimated monthly ad revenue
+Assuming 36,000–40,000 actual filled/showable interstitial impressions per day, here is a realistic range:
+
+Interstitial eCPM	Daily ad revenue	Monthly ad revenue
+$2.50 eCPM	$90–$100/day	$2,700–$3,000/month
+$5.00 eCPM	$180–$200/day	$5,400–$6,000/month
+$8.00 eCPM	$288–$320/day	$8,640–$9,600/month
+$10.00 eCPM	$360–$400/day	$10,800–$12,000/month
+For an average casual iOS game, I would not assume $10 eCPM right away unless you have strong U.S. traffic, good retention, clean ad placement, and good ad demand.
+
+Estimated in-app purchase revenue
+This is harder because it depends on how useful your coin packs are, how often users run out of hearts, whether purchases feel fair, and whether the game has enough progression to make spending worthwhile.
+
+Apple’s Small Business Program offers a reduced 15% commission on paid apps and in-app purchases for qualifying developers under the program; otherwise, the standard commission may apply after the program threshold or if you are not enrolled. 
+
+Here are reasonable IAP scenarios using Apple’s 15% small business commission, so this is estimated developer proceeds after Apple’s cut but before taxes.
+
+Scenario	Assumption	Monthly IAP payout
+Weak IAP	20 purchases/day × $2.99 avg	~$1,525/month
+Moderate IAP	50 purchases/day × $4.99 avg	~$6,360/month
+Strong IAP	100 purchases/day × $6.99 avg	~$17,825/month
+For an average new casual game, I would be more comfortable using the weak to moderate IAP range unless the store is very well designed.
+
+Total monthly payout estimate
+Combining interstitial ads + IAP:
+
+Scenario	Ad revenue	IAP revenue	Estimated total monthly payout
+Conservative	$2,700–$3,000	~$1,525	~$4,200–$4,500/month
+Average / realistic	$5,400–$6,000	~$6,360	~$11,700–$12,400/month
+Strong	$8,640–$12,000	~$17,825	~$26,400–$29,800/month
+My honest estimate for your game
+For 10,000 daily users, 12 levels per day, interstitial every 3 levels, and basic coin-pack IAPs, I would estimate:
+
+$6,000–$15,000 per month
+That is a realistic “average-to-good” range.
+
+A stronger version of the game with good retention, mostly U.S. users, good coin sinks, rewarded ads, and solid IAP design could push closer to:
+
+$20,000–$30,000 per month
+But I would not build your business plan around that higher number until you see actual metrics.
+
+Very important: this is payout, not profit
+That estimate does not subtract:
+
+Taxes
+
+Apple Developer fee
+
+Software subscriptions
+
+Asset costs
+
+Ads/marketing/user acquisition
+
+Contractor costs
+
+Refunds
+
+Chargebacks
+
+Business/legal/accounting costs
+
+If you have to buy users with ads, the profit may be much lower. For example, if it costs you $1.50–$3.00 to acquire each install, you need strong retention and monetization to make the math work.
+
+What I would track after launch
+Inside AdMob/App Store Connect, watch these numbers:
+
+Metric	Why it matters
+DAU	Daily active users
+Levels per user per day	Drives ad volume
+Interstitial impressions per DAU	You are targeting around 4/day
+eCPM	Main ad revenue driver
+Fill/match rate	Shows whether AdMob is actually serving ads
+IAP conversion rate	Percent of users who buy
+ARPPU	Average revenue per paying user
+ARPDAU	Revenue per daily active user
+Retention Day 1 / Day 7 / Day 30	Determines whether the game can scale
+Refund rate	Shows whether purchases feel fair
+The cleanest target metric is ARPDAU.
+
+For your game:
+
+$6,000/month ÷ 30 ÷ 10,000 users = $0.02 ARPDAU
+$15,000/month ÷ 30 ÷ 10,000 users = $0.05 ARPDAU
+$30,000/month ÷ 30 ÷ 10,000 users = $0.10 ARPDAU
+So if your game reaches $0.02–$0.05 ARPDAU, you are in the range of roughly $6k–$15k/month with 10,000 daily users.
+
+
+What if I can hit 50k ADU?
+
+Assuming you mean 50k DAU — daily active users — I’ll scale the earlier model but also flag where the math may become less linear, especially with ad fatigue and IAP conversion.
+
+Thought for 13s
+At 50,000 DAU, with each user playing 12 levels/day and an interstitial every 3 levels, you would have about:
+
+50,000 users × 12 levels ÷ 3 = 200,000 interstitial ad opportunities/day
+That is 6 million interstitial opportunities per month before fill rate, ad loading issues, or users closing the app.
+
+Estimated AdMob monthly revenue
+Interstitial eCPM	Estimated monthly ad revenue
+$2.50	$15,000/month
+$5.00	$30,000/month
+$8.00	$48,000/month
+$10.00	$60,000/month
+Those numbers assume all 200,000 daily ad opportunities become valid impressions. Realistically, I’d haircut that by maybe 10%–25% for fill rate, load failures, users quitting, consent limits, and ad pacing.
+
+So a more practical ad-only range might be:
+
+$12,000–$50,000/month from interstitial ads
+Adding in-app purchases
+At 50k DAU, IAP could become meaningful, but it depends heavily on your store design. For a casual game with coins/hearts/retries, I would estimate:
+
+IAP performance	Estimated monthly IAP payout
+Weak	$5,000–$10,000/month
+Moderate	$20,000–$40,000/month
+Strong	$60,000–$100,000+/month
+For an average indie casual game, I would not assume the strong range unless the game has good progression, upgrade pressure, good retention, and a compelling reason to buy coins.
+
+Total monthly payout estimate
+Scenario	Ads	IAP	Total monthly payout
+Conservative	$12k–$20k	$5k–$10k	$17k–$30k/month
+Realistic/good	$25k–$40k	$20k–$40k	$45k–$80k/month
+Strong	$45k–$60k	$60k–$100k+	$105k–$160k+/month
+My honest estimate
+For 50k DAU, I would plan around:
+
+$30,000–$80,000/month
+That assumes decent U.S.-heavy traffic, average-to-good AdMob eCPM, interstitials every 3 levels, and some in-app purchases.
+
+A very strong version could pass:
+
+$100,000/month
+But I would treat that as an upside case, not the baseline.
+
+ARPDAU shortcut
+A helpful way to think about it:
+
+ARPDAU	Monthly revenue at 50k DAU
+$0.02	$30,000/month
+$0.05	$75,000/month
+$0.10	$150,000/month
+For your type of game, $0.02–$0.05 ARPDAU is the safer target range.
+
+
+I changed the name of the game to "Frostillery!"
+
+Please create a new privacy policy and a new support page. 
+
+Worked for 3m 49s
+Done. I created the new Frostillery! pages here:
+
+privacy.html
+
+support.html
+
+frostillery-pages.zip
+
+I built them as plain static HTML so they can go straight onto GitHub Pages or any simple web host. The privacy page covers AdMob, Apple in-app purchases, support emails, diagnostics, advertising identifiers, children under 13, and user choices. The support page includes purchase help, ad issues, gameplay/progress issues, and your support email.
+
+I also aligned the pages with Apple’s current requirement that apps have a privacy policy URL and functional support link, and with AdMob privacy-policy expectations. 
+
+I checked for old Blizzard / Battleground wording and did not find any leftover references.
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frostillery! Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Frostillery!, a mobile tank duel game for iOS.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4fbff;
+      --panel: #ffffff;
+      --ink: #17324d;
+      --muted: #56718a;
+      --line: #cfe5f5;
+      --accent: #1677b8;
+      --accent-dark: #0f527f;
+      --ice: #e4f6ff;
+      --snow: #f9fdff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(132, 206, 244, 0.45), transparent 32rem),
+        linear-gradient(180deg, var(--bg), #ffffff 55%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 68px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #9ed5f4;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #dff6ff, #ffffff);
+      color: var(--accent-dark);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 8px;
+    }
+
+    .nav-links a[aria-current="page"],
+    .nav-links a:hover {
+      background: var(--ice);
+    }
+
+    main {
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(244, 251, 255, 0.95));
+      box-shadow: 0 20px 50px rgba(26, 80, 122, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+      margin-top: 32px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 16px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.84);
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+    }
+
+    .toc a {
+      display: block;
+      color: var(--accent-dark);
+      text-decoration: none;
+      padding: 6px 0;
+      font-size: 0.94rem;
+    }
+
+    .policy {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    section + section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.42rem;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px 1.25rem;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .note {
+      padding: 14px 16px;
+      border: 1px solid #b9def1;
+      border-radius: 8px;
+      background: var(--snow);
+      color: var(--accent-dark);
+      font-weight: 650;
+    }
+
+    .contact-box {
+      padding: 18px;
+      border: 1px solid #b8ddf2;
+      border-radius: 8px;
+      background: var(--ice);
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+      color: var(--muted);
+      background: #ffffff;
+    }
+
+    @media (max-width: 780px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      .hero,
+      .policy {
+        padding: 22px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="support.html" aria-label="Frostillery support home">
+        <span class="mark" aria-hidden="true">F</span>
+        <span>Frostillery!</span>
+      </a>
+      <nav class="nav-links" aria-label="Legal and support pages">
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Frostillery!</h1>
+        <p class="lede">This Privacy Policy explains how information may be collected, used, and shared when you play Frostillery!, including information handled through Google AdMob ads and Apple in-app purchases.</p>
+      </div>
+
+      <div class="content">
+        <aside class="toc" aria-label="Privacy policy sections">
+          <h2>Sections</h2>
+          <a href="#overview">Overview</a>
+          <a href="#information">Information We Collect</a>
+          <a href="#use">How We Use Information</a>
+          <a href="#ads">Ads and AdMob</a>
+          <a href="#purchases">In-App Purchases</a>
+          <a href="#sharing">Sharing</a>
+          <a href="#choices">Your Choices</a>
+          <a href="#children">Children</a>
+          <a href="#retention">Retention</a>
+          <a href="#changes">Changes</a>
+          <a href="#contact">Contact</a>
+        </aside>
+
+        <article class="policy">
+          <section id="overview">
+            <h2>Overview</h2>
+            <p><strong>Effective date:</strong> June 23, 2026</p>
+            <p>Frostillery! is a mobile game published by Amiel Herrick. The game is designed for casual entertainment and may include advertisements, gameplay progression, virtual coins or items, and optional in-app purchases.</p>
+            <p>This policy applies to Frostillery! on iOS and to related support communications. It does not apply to websites, apps, or services operated by third parties except where described below.</p>
+            <p class="note">Frostillery! does not require users to create an account, and the developer does not collect credit card numbers or other payment card details.</p>
+          </section>
+
+          <section id="information">
+            <h2>Information We Collect</h2>
+            <p>Depending on how you use the game, the following categories of information may be collected by the app, by Apple, by Google AdMob, or by other service providers used to operate the game:</p>
+            <h3>Game and device information</h3>
+            <ul>
+              <li>Device type, operating system, app version, language, and general device settings.</li>
+              <li>Gameplay activity, such as level progress, coins, upgrades, skins, settings, and similar in-game status information.</li>
+              <li>Crash logs, diagnostics, performance data, and bug-related information.</li>
+            </ul>
+            <h3>Advertising information</h3>
+            <ul>
+              <li>Advertising identifiers, such as Apple’s Identifier for Advertisers, if permission is granted through iOS.</li>
+              <li>Approximate location inferred from IP address, ad interaction data, and other information used by advertising providers to deliver, measure, and improve ads.</li>
+            </ul>
+            <h3>Purchase information</h3>
+            <ul>
+              <li>Apple may process in-app purchases and provide transaction status or receipt information so the game can deliver purchased coins, items, or entitlements.</li>
+              <li>The developer does not receive your full payment card number, banking information, or Apple ID password.</li>
+            </ul>
+            <h3>Support information</h3>
+            <ul>
+              <li>If you email support, we may receive your email address, message, screenshots, device details you choose to provide, and any other information included in your request.</li>
+            </ul>
+          </section>
+
+          <section id="use">
+            <h2>How We Use Information</h2>
+            <p>Information may be used to:</p>
+            <ul>
+              <li>Operate the game and save or restore gameplay status where supported.</li>
+              <li>Display ads and measure ad performance.</li>
+              <li>Process in-app purchases and deliver virtual items.</li>
+              <li>Fix bugs, troubleshoot crashes, improve performance, and develop future updates.</li>
+              <li>Respond to support requests.</li>
+              <li>Prevent fraud, abuse, invalid ad traffic, or misuse of the app.</li>
+              <li>Comply with legal, tax, accounting, App Store, and platform obligations.</li>
+            </ul>
+          </section>
+
+          <section id="ads">
+            <h2>Ads and Google AdMob</h2>
+            <p>Frostillery! may show ads through Google AdMob. AdMob and its partners may collect and use information from your device to provide ads, limit repetitive ads, detect invalid activity, measure ad performance, and support personalized or non-personalized advertising depending on your settings, location, and consent choices.</p>
+            <p>On iOS, you may be asked whether you allow tracking for advertising purposes. If you do not allow tracking, the game may still show ads, but those ads may be less personalized.</p>
+            <p>You can learn more about Google’s privacy practices at <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and about Google’s ad technologies at <a href="https://policies.google.com/technologies/ads" rel="noopener">Google Advertising Policies and Technologies</a>.</p>
+          </section>
+
+          <section id="purchases">
+            <h2>In-App Purchases</h2>
+            <p>Frostillery! may offer optional in-app purchases, such as coin packs, upgrades, skins, or other virtual items. Purchases are processed by Apple through the App Store. Apple handles payment information and may provide the app with confirmation that a transaction was completed so the purchased item can be delivered.</p>
+            <p>In-app purchases are subject to Apple’s terms, payment rules, refund policies, and account settings. For purchase or refund issues, you may need to contact Apple Support or use Apple’s purchase history tools.</p>
+          </section>
+
+          <section id="sharing">
+            <h2>How Information Is Shared</h2>
+            <p>Information may be shared with:</p>
+            <ul>
+              <li><strong>Google AdMob and advertising partners</strong> to deliver, measure, and improve ads and detect invalid traffic.</li>
+              <li><strong>Apple</strong> to process in-app purchases, App Store distribution, diagnostics, and platform services.</li>
+              <li><strong>Service providers</strong> that help operate, support, secure, analyze, or improve the game.</li>
+              <li><strong>Legal or safety authorities</strong> if required by law or needed to protect rights, safety, users, or the integrity of the game.</li>
+            </ul>
+            <p>We do not sell your personal information directly to data brokers. Advertising providers may process data according to their own policies and your consent choices.</p>
+          </section>
+
+          <section id="choices">
+            <h2>Your Choices</h2>
+            <ul>
+              <li><strong>Tracking permission:</strong> You can manage app tracking choices in iOS Settings.</li>
+              <li><strong>Ad personalization:</strong> You can manage some Google ad personalization settings through your Google account and device settings.</li>
+              <li><strong>Purchases:</strong> You can manage subscriptions, purchase history, refunds, and family purchase controls through Apple’s App Store and Apple ID settings.</li>
+              <li><strong>Support emails:</strong> You may ask us to delete support emails unless retention is needed for legal, security, or dispute-resolution reasons.</li>
+              <li><strong>App removal:</strong> You can stop further app-based collection by deleting Frostillery! from your device.</li>
+            </ul>
+          </section>
+
+          <section id="children">
+            <h2>Children</h2>
+            <p>Frostillery! is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through a support request or other communication, please contact us so we can review and delete the information where appropriate.</p>
+          </section>
+
+          <section id="retention">
+            <h2>Retention and Security</h2>
+            <p>We keep information only as long as reasonably needed for the purposes described in this policy, including support, troubleshooting, legal compliance, accounting, security, and platform requirements. Third-party providers, including Google and Apple, may retain information according to their own policies.</p>
+            <p>No method of electronic storage or transmission is completely secure, but we take reasonable steps to protect support communications and app-related records within our control.</p>
+          </section>
+
+          <section id="changes">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the effective date above and post the revised policy at this page.</p>
+          </section>
+
+          <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-box">
+              <p><strong>Publisher:</strong> Amiel Herrick</p>
+              <p><strong>Email:</strong> <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></p>
+              <p>Please include “Frostillery Privacy” in the subject line if your message relates to privacy choices, data questions, or deletion requests.</p>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Amiel Herrick. Frostillery! and related game content are owned by their respective rights holder.</p>
+    </div>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frostillery! Support</title>
+  <meta name="description" content="Support page for Frostillery!, a mobile tank duel game for iOS.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4fbff;
+      --panel: #ffffff;
+      --ink: #17324d;
+      --muted: #56718a;
+      --line: #cfe5f5;
+      --accent: #1677b8;
+      --accent-dark: #0f527f;
+      --ice: #e4f6ff;
+      --snow: #f9fdff;
+      --warning: #8b5a00;
+      --warning-bg: #fff7df;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(132, 206, 244, 0.45), transparent 32rem),
+        linear-gradient(180deg, var(--bg), #ffffff 55%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(10px);
+    }
+
+    .wrap {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 68px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #9ed5f4;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #dff6ff, #ffffff);
+      color: var(--accent-dark);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: var(--accent-dark);
+      font-weight: 700;
+      text-decoration: none;
+      padding: 8px 10px;
+      border-radius: 8px;
+    }
+
+    .nav-links a[aria-current="page"],
+    .nav-links a:hover {
+      background: var(--ice);
+    }
+
+    main {
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 18px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(244, 251, 255, 0.95));
+      box-shadow: 0 20px 50px rgba(26, 80, 122, 0.08);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent-dark);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.1rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lede {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .primary-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--accent-dark);
+      border-radius: 8px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .card,
+    .wide-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    .wide-card {
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.32rem;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 14px 1.25rem;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      padding: 14px 16px;
+      border: 1px solid #f1d28b;
+      border-radius: 8px;
+      background: var(--warning-bg);
+      color: var(--warning);
+      font-weight: 650;
+    }
+
+    .support-list {
+      display: grid;
+      gap: 10px;
+      margin: 16px 0 0;
+    }
+
+    .support-item {
+      padding: 14px;
+      border: 1px solid #b8ddf2;
+      border-radius: 8px;
+      background: var(--ice);
+    }
+
+    .support-item strong {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 5px;
+      background: #eef7fc;
+      color: var(--accent-dark);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.94em;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0;
+      color: var(--muted);
+      background: #ffffff;
+    }
+
+    @media (max-width: 780px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      .hero,
+      .card,
+      .wide-card {
+        padding: 22px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="support.html" aria-label="Frostillery support home">
+        <span class="mark" aria-hidden="true">F</span>
+        <span>Frostillery!</span>
+      </a>
+      <nav class="nav-links" aria-label="Legal and support pages">
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Player Support</p>
+          <h1>Frostillery!</h1>
+          <p class="lede">Need help with a bug, purchase, ad issue, or gameplay question? Send a support request and include the details below so the issue can be reviewed quickly.</p>
+        </div>
+        <a class="primary-action" href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Support%20Request">Email Support</a>
+        <p class="meta">Support email: <a href="mailto:amielherrick.games@gmail.com">amielherrick.games@gmail.com</a></p>
+      </section>
+
+      <section class="grid" aria-label="Support topics">
+        <article class="card">
+          <h2>What to Include</h2>
+          <p>When contacting support, please include:</p>
+          <ul>
+            <li>Your device model, such as iPhone 17 Pro Max or iPhone 15.</li>
+            <li>Your iOS version.</li>
+            <li>The Frostillery! app version, if visible in the app or App Store.</li>
+            <li>A short description of what happened and what you expected to happen.</li>
+            <li>The level, screen, cannon, tank skin, upgrade, or purchase involved.</li>
+            <li>Screenshots or screen recordings if they help explain the issue.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Purchase Help</h2>
+          <p>Frostillery! may offer optional in-app purchases, such as coin packs or virtual items. Purchases are processed by Apple through the App Store.</p>
+          <p>If a purchase does not appear, first restart the app and confirm the purchase in your Apple purchase history. If the issue continues, email support with the approximate purchase date, item purchased, and a screenshot of the Apple receipt.</p>
+          <p class="notice">Do not email credit card numbers, Apple ID passwords, or bank information.</p>
+        </article>
+
+        <article class="card">
+          <h2>Ads</h2>
+          <p>Frostillery! may show ads, including interstitial ads between gameplay moments. Ads help support ongoing development and updates.</p>
+          <p>If an ad freezes, does not close, repeats too often, or appears in a confusing place, please email support with your device model, iOS version, app version, and what you were doing when the ad appeared.</p>
+        </article>
+
+        <article class="card">
+          <h2>Gameplay and Progress</h2>
+          <p>If level progress, coins, upgrades, skins, or settings do not look correct, restart the app first. If the issue continues, send the level number, what changed, and any screenshots you have.</p>
+          <p>For best results, keep Frostillery! updated through the App Store so you receive bug fixes and balance updates.</p>
+        </article>
+      </section>
+
+      <section class="wide-card">
+        <h2>Common Questions</h2>
+
+        <h3>The game crashed or froze. What should I do?</h3>
+        <ol>
+          <li>Close and reopen Frostillery!.</li>
+          <li>Check the App Store for an update.</li>
+          <li>Restart your device if the issue continues.</li>
+          <li>Email support if the same issue happens again.</li>
+        </ol>
+
+        <h3>Can I get a refund for an in-app purchase?</h3>
+        <p>Apple controls App Store payment processing and refund decisions. You can request a refund through Apple’s report-a-problem process or your Apple purchase history. Support can help troubleshoot delivery issues but cannot directly access your payment card or Apple account.</p>
+
+        <h3>Why am I seeing ads?</h3>
+        <p>Ads help keep Frostillery! available and support future updates. The game may show ads between levels or at other natural breaks in gameplay.</p>
+
+        <h3>How do I report a privacy question?</h3>
+        <p>Email <a href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Privacy%20Question">amielherrick.games@gmail.com</a> with the subject line <code>Frostillery Privacy Question</code>. You can also review the <a href="privacy.html">Privacy Policy</a>.</p>
+      </section>
+
+      <section class="wide-card">
+        <h2>Contact</h2>
+        <div class="support-list">
+          <div class="support-item">
+            <strong>General support</strong>
+            <a href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Support%20Request">amielherrick.games@gmail.com</a>
+          </div>
+          <div class="support-item">
+            <strong>Privacy questions</strong>
+            <a href="mailto:amielherrick.games@gmail.com?subject=Frostillery%20Privacy%20Question">amielherrick.games@gmail.com</a>
+          </div>
+          <div class="support-item">
+            <strong>Suggested subject line</strong>
+            <span><code>Frostillery Support Request</code></span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Amiel Herrick. Frostillery! and related game content are owned by their respective rights holder.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+Pasted text(6).txt
+Document
+can you also update this page: 
+
+Worked for 2m 45s
+Updated. I added the revised Terms page here:
+
+terms.html
+
+frostillery-pages.zip
+
+I changed the old Blizzard Battleground references to Frostillery!, updated the effective/last updated date to June 23, 2026, pointed navigation to support.html, privacy.html, and terms.html, and cleaned up a few style/punctuation issues. The zip now includes all three pages: support, privacy, and terms.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="Terms of Use for Blizzard Battleground, including rules for gameplay, in-app purchases, ads, coins, rewards, intellectual property, and legal disclaimers." />
-  <meta name="theme-color" content="#2b7de9" />
-  <meta property="og:title" content="Terms of Use | Blizzard Battleground" />
-  <meta property="og:description" content="Terms of Use for Blizzard Battleground, including rules for gameplay, in-app purchases, ads, coins, rewards, intellectual property, and legal disclaimers." />
+  <meta name="description" content="Terms of Use for Frostillery!, including rules for gameplay, in-app purchases, ads, coins, rewards, intellectual property, and legal disclaimers." />
+  <meta name="theme-color" content="#1677b8" />
+  <meta property="og:title" content="Terms of Use | Frostillery!" />
+  <meta property="og:description" content="Terms of Use for Frostillery!, including rules for gameplay, in-app purchases, ads, coins, rewards, intellectual property, and legal disclaimers." />
   <meta property="og:type" content="website" />
-  <title>Terms of Use | Blizzard Battleground</title>
+  <title>Terms of Use | Frostillery!</title>
   <style>
-
     :root {
-      --bg: #f6fbff;
+      --bg: #f4fbff;
       --card: #ffffff;
-      --text: #172033;
-      --muted: #5f6f89;
-      --accent: #2b7de9;
-      --accent-dark: #155db6;
-      --border: #d9e7f7;
-      --ice: #eef8ff;
+      --text: #17324d;
+      --muted: #56718a;
+      --accent: #1677b8;
+      --accent-dark: #0f527f;
+      --border: #cfe5f5;
+      --ice: #e4f6ff;
       --snow: #ffffff;
-      --warning-bg: #fff8e6;
-      --warning-border: #f1d28a;
+      --warning-bg: #fff7df;
+      --warning-border: #f1d28b;
       --danger-bg: #fff0f0;
       --danger-border: #f0b8b8;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.65;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(158, 218, 255, 0.55), transparent 34rem),
-        linear-gradient(180deg, #eaf7ff 0%, var(--bg) 45%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(132, 206, 244, 0.45), transparent 32rem),
+        linear-gradient(180deg, var(--bg), #ffffff 55%);
     }
-    .page { max-width: 1080px; margin: 0 auto; padding: 28px 18px 64px; }
-    a { color: var(--accent-dark); font-weight: 650; text-decoration-thickness: 0.08em; text-underline-offset: 0.18em; word-break: break-word; }
-    a:hover { color: var(--accent); }
-    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 18px; color: var(--muted); font-size: 0.95rem; flex-wrap: wrap; }
-    .brand-mini { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--accent-dark); letter-spacing: -0.01em; text-decoration: none; }
-    .logo-dot { width: 34px; height: 34px; display: inline-grid; place-items: center; border-radius: 12px; background: linear-gradient(135deg, #d8f2ff, #ffffff); border: 1px solid var(--border); box-shadow: 0 6px 16px rgba(30, 88, 140, 0.12); font-size: 1.15rem; }
-    nav { display: flex; gap: 14px; flex-wrap: wrap; }
-    nav a { text-decoration: none; }
-    .hero, header.hero { background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 48%, #f7fcff 100%); border: 1px solid var(--border); border-radius: 24px; padding: clamp(30px, 5vw, 52px); box-shadow: 0 12px 32px rgba(30, 88, 140, 0.1); position: relative; overflow: hidden; margin-bottom: 22px; }
-    .hero::after { content: ""; position: absolute; width: 280px; height: 280px; right: -90px; top: -100px; border-radius: 50%; background: radial-gradient(circle, rgba(43, 125, 233, 0.12), rgba(43, 125, 233, 0)); pointer-events: none; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--ice); color: var(--accent-dark); border: 1px solid var(--border); font-size: 0.9rem; font-weight: 750; margin: 0 0 14px; }
-    h1 { margin: 0 0 10px; font-size: clamp(2.15rem, 6vw, 4.15rem); line-height: 1.02; letter-spacing: -0.055em; }
-    .subtitle { margin: 0; color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.22rem); max-width: 760px; }
-    .meta { margin-top: 18px; color: var(--muted); font-size: 0.98rem; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; margin-top: 18px; }
-    .card { grid-column: span 12; background: rgba(255,255,255,0.92); border: 1px solid var(--border); border-radius: 20px; padding: 24px; box-shadow: 0 10px 28px rgba(30,88,140,0.07); }
-    .card.half { grid-column: span 6; }
-    .card.third { grid-column: span 4; }
-    h2 { margin: 0 0 12px; color: var(--accent-dark); font-size: 1.35rem; line-height: 1.2; letter-spacing: -0.015em; }
-    h3 { margin: 22px 0 8px; font-size: 1.05rem; color: #22314d; }
-    p { margin: 0 0 12px; }
-    ul { margin: 10px 0 0 1.25rem; padding: 0; }
-    li { margin: 7px 0; }
-    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 16px; border-radius: 999px; background: var(--accent-dark); color: white; text-decoration: none; box-shadow: 0 8px 20px rgba(21,93,182,0.18); }
-    .button.secondary { background: #ffffff; color: var(--accent-dark); border: 1px solid var(--border); box-shadow: none; }
-    .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-    .pill { display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px; background: var(--ice); border: 1px solid var(--border); color: var(--accent-dark); font-size: 0.88rem; font-weight: 700; }
-    .notice { border-radius: 16px; padding: 16px 18px; margin: 18px 0; background: var(--ice); border: 1px solid var(--border); border-left: 5px solid var(--accent); }
-    .warning { background: var(--warning-bg); border-color: var(--warning-border); border-left-color: #d59b16; }
-    .danger { background: var(--danger-bg); border-color: var(--danger-border); border-left-color: #c33; }
-    details { margin: 12px 0; padding: 14px 16px; background: #f7fbff; border: 1px solid var(--border); border-radius: 14px; }
-    summary { cursor: pointer; font-weight: 800; color: var(--accent-dark); }
-    details p { margin: 10px 0 0; }
-    .toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 18px; margin-top: 10px; }
-    .toc a { display: block; padding: 8px 10px; background: #f7fbff; border: 1px solid var(--border); border-radius: 12px; text-decoration: none; }
-    .fineprint { color: var(--muted); font-size: 0.94rem; }
-    footer { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.92rem; }
-    footer .links { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 10px; }
-    @media (max-width: 780px) { .card.half, .card.third { grid-column: span 12; } .toc { grid-template-columns: 1fr; } .hero, header.hero { padding: 28px 22px; } }
 
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+
+    a {
+      color: var(--accent-dark);
+      font-weight: 650;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+      word-break: break-word;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      flex-wrap: wrap;
+    }
+
+    .brand-mini {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      color: var(--accent-dark);
+      letter-spacing: 0;
+      text-decoration: none;
+    }
+
+    .logo-dot {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #d8f2ff, #ffffff);
+      border: 1px solid var(--border);
+      box-shadow: 0 6px 16px rgba(30, 88, 140, 0.12);
+      font-size: 1.05rem;
+      font-weight: 900;
+    }
+
+    nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .hero,
+    header.hero {
+      background: radial-gradient(circle at top left, #d8f2ff 0%, #ffffff 48%, #f7fcff 100%);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(30px, 5vw, 52px);
+      box-shadow: 0 12px 32px rgba(30, 88, 140, 0.1);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -90px;
+      top: -100px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(22, 119, 184, 0.12), rgba(22, 119, 184, 0));
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: var(--ice);
+      color: var(--accent-dark);
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      font-weight: 750;
+      margin: 0 0 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.15rem, 6vw, 4.15rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.22rem);
+      max-width: 760px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 10px 28px rgba(30, 88, 140, 0.07);
+    }
+
+    .card.half {
+      grid-column: span 6;
+    }
+
+    .card.third {
+      grid-column: span 4;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--accent-dark);
+      font-size: 1.35rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1.05rem;
+      color: #22314d;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 0 1.25rem;
+      padding: 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: var(--accent-dark);
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(21, 93, 182, 0.18);
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: var(--accent-dark);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      color: var(--accent-dark);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .notice {
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 18px 0;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+    }
+
+    .warning {
+      background: var(--warning-bg);
+      border-color: var(--warning-border);
+      border-left-color: #d59b16;
+    }
+
+    .danger {
+      background: var(--danger-bg);
+      border-color: var(--danger-border);
+      border-left-color: #c33;
+    }
+
+    details {
+      margin: 12px 0;
+      padding: 14px 16px;
+      background: #f7fbff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: var(--accent-dark);
+    }
+
+    details p {
+      margin: 10px 0 0;
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 18px;
+      margin-top: 10px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 8px 10px;
+      background: #f7fbff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .fineprint {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    footer .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 780px) {
+      .card.half,
+      .card.third {
+        grid-column: span 12;
+      }
+
+      .toc {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      header.hero {
+        padding: 28px 22px;
+      }
+    }
   </style>
 </head>
 <body>
   <main class="page">
     <div class="topbar">
-      <a class="brand-mini" href="index.html" aria-label="Blizzard Battleground home"><span class="logo-dot">❄️</span><span>Blizzard Battleground</span></a>
+      <a class="brand-mini" href="support.html" aria-label="Frostillery home"><span class="logo-dot">F</span><span>Frostillery!</span></a>
       <nav aria-label="Site navigation">
-        <a href="index.html">Support</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="terms.html" aria-current="page">Terms</a>
       </nav>
     </div>
 
     <header class="hero">
       <p class="eyebrow">Terms of Use</p>
       <h1>Terms of Use</h1>
-      <p class="subtitle">These Terms govern your access to and use of Blizzard Battleground, including gameplay, ads, rewards, coins, purchases, and support services.</p>
-      <p class="meta"><strong>Effective date:</strong> June 13, 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> June 13, 2026</p>
+      <p class="subtitle">These Terms govern your access to and use of Frostillery!, including gameplay, ads, rewards, coins, purchases, and support services.</p>
+      <p class="meta"><strong>Effective date:</strong> June 23, 2026 &nbsp;|&nbsp; <strong>Last updated:</strong> June 23, 2026</p>
     </header>
 
     <section class="card">
@@ -121,7 +2567,7 @@
     <section class="grid">
       <article class="card" id="license">
         <h2>1. License and Apple Standard EULA</h2>
-        <p>Blizzard Battleground is licensed, not sold, to you. Subject to your compliance with these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial entertainment purposes on Apple-branded products you own or control, as permitted by Apple’s Usage Rules.</p>
+        <p>Frostillery! is licensed, not sold, to you. Subject to your compliance with these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial entertainment purposes on Apple-branded products you own or control, as permitted by Apple’s Usage Rules.</p>
         <p>Your use of the App is also governed by Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a> unless the App Store lists a separate custom license agreement. If these Terms conflict with Apple’s Standard EULA, Apple’s Standard EULA controls where required by Apple’s rules.</p>
       </article>
 
@@ -252,14 +2698,15 @@
 
     <footer>
       <div class="links">
-        <a href="index.html">Support</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
         <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
       </div>
-      <div>© 2026 Amiel Herrick. Blizzard Battleground. All rights reserved.</div>
-      <div class="fineprint">This website provides support and legal information for the iOS app Blizzard Battleground.</div>
+      <div>&copy; 2026 Amiel Herrick. Frostillery! All rights reserved.</div>
+      <div class="fineprint">This website provides support and legal information for the iOS app Frostillery.</div>
     </footer>
   </main>
 </body>
 </html>
+
